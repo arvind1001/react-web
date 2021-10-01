@@ -1,5 +1,8 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import './assets/styles/bootstrap.min.css';
+import './assets/styles/responsive.scss';
+import './assets/styles/style.scss';
 import _ from 'lodash'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {  PageRoute , RouteLinks } from './router/index'

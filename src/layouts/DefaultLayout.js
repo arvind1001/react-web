@@ -6,7 +6,7 @@ import Footer from '../components/Footer/Footer'
 const DefaultLayout = (props) => {
   return (
       <div className="wrapper">
-        <Header  />
+        {/* <Header  /> */}
         {props.children}
         <Footer />
       </div>

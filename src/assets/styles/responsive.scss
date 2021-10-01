@@ -1,0 +1,110 @@
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 767.9px) {
+    .gallery-section {
+        padding: 0;
+    }
+    .mobile-border-hide{border: 0;}
+    .login-form {
+       width: 100%; 
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mobile-hide {
+        display: none;
+    }
+    .banner-cover img {
+        height: 450px;
+        object-fit: cover;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    footer .dis-cover {
+        -ms-flex: 0 0 60%;
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+    footer .footer-col{
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+    footer .footer-icon{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    footer .footer-col-2{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .cols{margin-bottom: 15px;}
+}
+
+@media screen and (max-width: 1024px) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .desk-hide {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-info .right-panel {
+        text-align: center!important;
+        margin: 5px;
+    }
+    .header-info .center-panel {
+        margin: 5px;
+    }
+    .header-info .left-panel {
+        text-align: center!important;
+        margin: 5px;
+    }
+    .dis-cover,
+    .footer-menu,
+    .footer-inf,
+    .footer-icon,
+    .copyr p {
+        margin-top: 20px !important;
+        text-align: center;
+    }
+    .border-lefts {
+        border-left: 0px solid #f4f4f4;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 768px) {
+    .gallery-section h3 {
+        font-size: 15px !important;
+    }
+    .gallery-section .exp-dec {
+        font-style: italic;
+        font-size: 10px;
+    }
+    .form-section h1 {
+        font-size: 20px;
+    }
+    .copyr p {
+        text-align: center !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1250px!important;
+    }
+}

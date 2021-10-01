@@ -1,0 +1,331 @@
+.secondary-header {
+    position: relative;
+    z-index: 99;
+}
+
+.header-info {
+    padding: 10px;
+}
+
+.text-left,
+.text-center {
+    color: #acacac;
+    font-size: 20px;
+}
+
+.white-txt {
+    color: #fff!important;
+}
+
+.grey-txt {
+    color: #acacac!important;
+}
+
+.clock-icon {
+    font-size: 12px;
+}
+
+.clock-icon .fa-clock {
+    margin-right: 5px;
+}
+
+.search-icon input[type="text"] {
+    width: 65px;
+    border: 1px solid #f5f3f3;
+    border-radius: 20px;
+    background: none;
+    height: 24px;
+    margin-top: 5px;
+    padding: 0px 0px 0px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.search-icon input[type="text"]:focus {
+    outline: none;
+}
+
+
+/* Secondary Header CSS End*/
+
+
+/* Header Area CSS Start*/
+
+.header-area {
+    padding: 5px 0;
+    background-color: #fff;
+    z-index: 99;
+    position: relative;
+    box-shadow: 0px 2px 5px 0 #07070733;
+}
+
+.header-area .nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.header-area .nav-link {
+    padding: .5rem .8rem;
+}
+
+.header-area .nav-link .fas {
+    color: #929292;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img:nth-child(1) {
+    margin-right: 15px;
+    width: 50px;
+}
+
+
+/* custom-dropdown */
+
+.custom-dropdwn-link {
+    cursor: pointer;
+}
+
+.custom-dropdwn {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.custom-dropdwn .fa-angle-down {
+    font-size: 16px;
+    margin-left: 8px;
+    color: black!important;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.custom-dropdwn:hover .dropdown-content {
+    display: block;
+}
+
+
+/*Header Area CSS End*/
+
+
+/* Mobile menu css Start */
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu span {
+    font-size: 30px;
+    cursor: pointer
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #435258;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* 
+.navbar {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+}
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-item {
+    height: 80px;
+}
+
+.nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-menu.active {
+        background: #242222;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .nav-links:hover {
+        background-color: #fff;
+        color: #242424;
+        border-radius: 0;
+    }
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #fff;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+    .nav-links-mobile:hover {
+        background: #fff;
+        color: #242424;
+        transition: 250ms;
+    } */
+
+//}

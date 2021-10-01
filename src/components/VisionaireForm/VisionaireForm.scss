@@ -1,0 +1,59 @@
+.form-section h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.login-form {
+    width: 230px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.login-form label {
+    display: inline-block;
+    margin-bottom: .2rem;
+    font-size: 12px;
+}
+
+.eye-password {
+    position: relative;
+}
+
+.eye-password .input-group-addon {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    color: #797d86;
+}
+
+.eye-password .input-group-addon a {
+    color: #797d86;
+}
+
+.form-check-label {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.sub-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.sub-btn button {
+    background: #8dbf4c;
+    border-radius: 27px;
+    border-color: #8dbf4c;
+    color: #fff;
+    transition: .5s;
+    padding: 5px 35px;
+}
+
+.sub-btn button:hover {
+    background: #659724;
+    border-color: #50850b;
+    color: #fff;
+    transition: .5s;
+}
