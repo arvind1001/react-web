@@ -8,6 +8,8 @@ const Home =()=> {
     <>
          <div className="banner">
          <Header  />
+
+         
         <section>
             <Row>
             <Col sm={12} md={12} className="banner-content">
