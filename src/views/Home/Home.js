@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container,Row,Col } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import HealthGallery from '../../components/HealthGallery/HealthGallery';
 import VisionaireForm from '../../components/VisionaireForm/VisionaireForm';
@@ -8,24 +9,24 @@ const Home =()=> {
          <div className="banner">
          <Header  />
         <section>
-            <div className="row">
-                <div className="col-md-12 banner-content">
+            <Row>
+            <Col sm={12} md={12} className="banner-content">
                     <h1>REGISTER</h1>
-                </div>
-            </div>
+                </Col>
+            </Row>
         </section>
     </div>
     <section className="p-tb-35">
-        <div className="container">
-            <div className="row">
-            <div className="col-md-6 col-sm-12">
+    <Container>
+           <Row>
+           <Col sm={12} md={6} >
                <VisionaireForm/>
-               </div>
-               <div className="col-md-6 col-sm-12 border-lefts mobile-border-hide">
+               </Col>
+               <Col sm={12} md={6} className="border-lefts mobile-border-hide">
                <HealthGallery/>
-               </div>
-              </div>
-        </div>
+               </Col>
+              </Row>
+        </Container>
     </section>
     </>
   );

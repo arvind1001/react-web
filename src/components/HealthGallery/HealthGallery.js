@@ -1,4 +1,5 @@
 import React from 'react';
+import {Row,Col } from 'react-bootstrap';
 import health from '../../assets/images/health.jpg';
 import prosperity from '../../assets/images/prosperity.jpg';
 import inspire from '../../assets/images/inspire.jpg';
@@ -11,8 +12,8 @@ const HealthGallery =()=> {
                     <div className="gallery-section ">
                         <h3>EXPLORE BY HEALTH INTEREST</h3>
                         <p className="exp-dec">Join our Rapidly growing community of advancing people,excit about expanding and exceling in every aspect of their lives for greater; happiness, health, prosperity, relationships, life satisfaction and spiritual connection. </p>
-                        <div className="row">
-                            <div className="col-md-6 gallery-grid">
+                        <Row className="row">
+                        <Col  sm={12}  md={6} className="gallery-grid">
                                 <div className="thumbnail">
                                     <a href="#">
                                         <img src={health} alt="Health" style={{width:'100%'}}/>
@@ -21,8 +22,8 @@ const HealthGallery =()=> {
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div className="col-md-6 gallery-grid">
+                            </Col>
+                            <Col  sm={12} md={6} className="gallery-grid">
                                 <div className="thumbnail">
                                     <a href="#">
                                         <img src={prosperity} alt="Prosperity" style={{width:'100%'}}/>
@@ -31,8 +32,8 @@ const HealthGallery =()=> {
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div className="col-md-6 gallery-grid">
+                            </Col>
+                            <Col sm={12} md={6} className="gallery-grid">
                                 <div className="thumbnail">
                                     <a href="#">
                                         <img src={inspire} alt="Inspire" style={{width:'100%'}}/>
@@ -41,8 +42,8 @@ const HealthGallery =()=> {
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div className="col-md-6 gallery-grid">
+                            </Col>
+                            <Col sm={12} md={6} className="gallery-grid">
                                 <div className="thumbnail">
                                     <a href="#">
                                         <img src={joy} alt="Joy" style={{width:'100%'}}/>
@@ -51,8 +52,8 @@ const HealthGallery =()=> {
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                     </div>
                
          

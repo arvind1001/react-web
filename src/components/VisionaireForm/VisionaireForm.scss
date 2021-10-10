@@ -10,27 +10,24 @@
     width: 230px;
     margin: 0 auto;
     padding: 20px 0px;
+    label {
+        display: inline-block;
+        margin-bottom: .2rem;
+        font-size: 12px;
+    }
 }
 
-.login-form label {
-    display: inline-block;
-    margin-bottom: .2rem;
-    font-size: 12px;
-}
-
-.eye-password {
+.login-form .eye-password {
     position: relative;
-}
-
-.eye-password .input-group-addon {
-    position: absolute;
-    right: 9px;
-    top: 9px;
-    color: #797d86;
-}
-
-.eye-password .input-group-addon a {
-    color: #797d86;
+    .input-group-addon {
+        position: absolute;
+        right: 9px;
+        top: 9px;
+        color: #797d86;
+        a {
+            color: #797d86;
+        }
+    }
 }
 
 .form-check-label {
@@ -40,20 +37,18 @@
 .sub-btn {
     display: flex;
     justify-content: center;
-}
-
-.sub-btn button {
-    background: #8dbf4c;
-    border-radius: 27px;
-    border-color: #8dbf4c;
-    color: #fff;
-    transition: .5s;
-    padding: 5px 35px;
-}
-
-.sub-btn button:hover {
-    background: #659724;
-    border-color: #50850b;
-    color: #fff;
-    transition: .5s;
+    button {
+        background: #8dbf4c;
+        border-radius: 27px;
+        border-color: #8dbf4c;
+        color: #fff;
+        transition: .5s;
+        padding: 5px 35px;
+    }
+    button:hover {
+        background: #659724;
+        border-color: #50850b;
+        color: #fff;
+        transition: .5s;
+    }
 }

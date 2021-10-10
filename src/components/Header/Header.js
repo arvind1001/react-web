@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Container,Row,Col } from 'react-bootstrap';
 import lineIcon from '../../assets/images/line-icon.jpg';
 import logo from '../../assets/images/logo.jpg';
 import './Header.scss';
@@ -27,16 +28,16 @@ const Header=() =>{
   return (
     <>
              {/* <!-- ***** Top  Header Start ***** --> */}
-             <header className="secondary-header">
-            <div className="container-fluid">
-                <div className="row align-items-center justify-content-between header-info">
-                    <div className="col-md-4 left-panel text-left grey-txt">
+        <header className="secondary-header">
+        <Container fluid>
+                <Row className="align-items-center justify-content-between header-info">
+                    <Col md={4} className="left-panel text-left grey-txt">
                         <i className="far fa-file-alt"></i>
-                    </div>
-                    <div className="col-md-4 center-panel text-center grey-txt">
+                    </Col>
+                    <Col md={4} className="center-panel text-center grey-txt">
                         <p className="mb-0">Second Genome</p>
-                    </div>
-                    <div className="col-md-4 right-panel text-right">
+                    </Col>
+                    <Col md={4} className="right-panel text-right">
                         <div className="clock-icon">
                             <i className="white-txt fas fa-clock"></i><span className="grey-txt">16:00 GMT</span>
                         </div>
@@ -44,22 +45,22 @@ const Header=() =>{
                             <i className="white-txt fas fa-search"></i>
                             <input type="text" />
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </header>
         {/* <!-- ***** Top  Header End ***** -->
         <!-- ***** Header Area Start ***** --> */}
         <header className="header-area">
-            <div className="container-fluid">
-                <div className="row align-items-center">
-                    <div className="col-md-3 mobile-hide">
+        <Container fluid>
+                <Row className="align-items-center">
+                <Col md={3} className="mobile-hide">
                         {/* <!-- Logo --> */}
                         <a className="navbar-brand">
                         <img src={lineIcon}/>
                         <img src={logo}/></a>
-                    </div>
-                    <div className="col-md-6 mobile-hide">
+                    </Col>
+                    <Col md={6} className="mobile-hide">
                         <nav className="custom-navbar">
                             <div className="navbar-navs">
                                 <ul className="navbar-info d-flex align-items-center">
@@ -99,8 +100,8 @@ const Header=() =>{
                             </div>
                         </nav>
 
-                    </div>
-                    <div className="col-md-3 mobile-hide">
+                    </Col>
+                    <Col md={3} className="mobile-hide">
                         <ul className="d-flex justify-content-end align-items-center">
                             <li className="nav-item">
                                 <a className="nav-link">
@@ -124,9 +125,8 @@ const Header=() =>{
                             </li>
 
                         </ul>
-
-                    </div>
-                    <div className="col-md-12 desk-hide">
+                    </Col>
+                    <Col md={12} className="desk-hide">
                         <div className="mobile-menu">
                             <a className="navbar-brand"><img src="./images/logo.jpg"/></a>
                             <span onclick="toggleSideNav()">&#9776;</span>
@@ -140,9 +140,9 @@ const Header=() =>{
                             <a href="#">prosper</a>
                             <a href="#">get started</a>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+           </Container>
         </header>
         {/* <!-- ***** Header Area End ***** -->
 
