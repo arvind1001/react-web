@@ -3,6 +3,7 @@ import { Container,Row,Col } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import HealthGallery from '../../components/HealthGallery/HealthGallery';
 import VisionaireForm from '../../components/VisionaireForm/VisionaireForm';
+import './Register.scss';
 const Register =()=> {
   return (
     <>
@@ -13,7 +14,7 @@ const Register =()=> {
         <section>
             <Row>
             <Col sm={12} md={12} className="banner-content">
-                    <h1>REGISTER</h1>
+                    <h1>Get Started</h1>
                 </Col>
             </Row>
         </section>

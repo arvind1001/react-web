@@ -1,17 +1,17 @@
 import Register  from '../views/Register/Register';
-import Services  from '../views/Services/Services';
-import Products  from '../views/Products/Products';
+import Home  from '../views/Home/Home';
+import AdvanceExercises  from '../views/AdvanceExercises/AdvanceExercises';
 
 
 export const RouteLinks = {
     Register: {
       component: Register, path: '/',
     },
-    Services: {
-      component: Services, path: '/services',
+    Home: {
+      component: Home, path: '/home',
     },
-    Products: {
-      component: Products, path: '/products',
+    AdvanceExercises: {
+      component: AdvanceExercises, path: '/advance-Exercises',
     },
 
 }
