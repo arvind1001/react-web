@@ -1,11 +1,11 @@
-import Home  from '../views/Home/Home';
+import Register  from '../views/Register/Register';
 import Services  from '../views/Services/Services';
 import Products  from '../views/Products/Products';
 
 
 export const RouteLinks = {
-    Home: {
-      component: Home, path: '/',
+    Register: {
+      component: Register, path: '/',
     },
     Services: {
       component: Services, path: '/services',

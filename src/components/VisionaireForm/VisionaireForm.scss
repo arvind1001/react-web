@@ -1,9 +1,10 @@
 .form-section h1 {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     font-weight: 300;
     letter-spacing: 0.1rem;
     margin-bottom: 15px;
+    font-family: 'Lato-Light';
 }
 
 .login-form {
@@ -13,7 +14,8 @@
     label {
         display: inline-block;
         margin-bottom: .2rem;
-        font-size: 12px;
+        font-size: 10px;
+        font-family: 'Roboto-Regular';
     }
 }
 
@@ -30,24 +32,30 @@
     }
 }
 
-.form-check-label {
-    border-bottom: 1px solid #d3d3d3;
+.form-check {
+    label {
+        border-bottom: 1px solid #d3d3d3;
+        font-family: 'Lato-Regular';
+        font-size: 11px;
+    }
 }
 
 .sub-btn {
     display: flex;
     justify-content: center;
     button {
-        background: #8dbf4c;
+        background: #a1a1a1;
         border-radius: 27px;
-        border-color: #8dbf4c;
+        border-color: #a1a1a1;
         color: #fff;
         transition: .5s;
         padding: 5px 35px;
+        font-family: 'Lato-Regular';
+        font-size: 14px;
     }
     button:hover {
-        background: #659724;
-        border-color: #50850b;
+        background: #706f6f;
+        border-color: #706f6f;
         color: #fff;
         transition: .5s;
     }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
 import lineIcon from '../../assets/images/line-icon.jpg';
-import logo from '../../assets/images/logo.jpg';
+import logo from '../../assets/images/logo.png';
 import './Header.scss';
 
 const Header=() =>{
@@ -28,7 +28,7 @@ const Header=() =>{
   return (
     <>
              {/* <!-- ***** Top  Header Start ***** --> */}
-        <header className="secondary-header">
+        {/* <header className="secondary-header">
         <Container fluid>
                 <Row className="align-items-center justify-content-between header-info">
                     <Col md={4} className="left-panel text-left grey-txt">
@@ -48,7 +48,7 @@ const Header=() =>{
                     </Col>
                 </Row>
             </Container>
-        </header>
+        </header> */}
         {/* <!-- ***** Top  Header End ***** -->
         <!-- ***** Header Area Start ***** --> */}
         <header className="header-area">

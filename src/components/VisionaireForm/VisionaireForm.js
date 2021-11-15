@@ -40,7 +40,7 @@ const VisionaireForm =()=> {
                                 </div>
                                 <div className="form-group form-check">
                                     <input type="checkbox" className="form-check-input" id="termsConditions"/>
-                                    <label className="form-check-label" for="termsConditions">I agree with terms and conditions </label>
+                                    <label for="termsConditions">I agree with terms and conditions </label>
                                 </div>
                                 <div className="sub-btn">
                                     <button type="submit" className="btn">SIGN UP</button>
