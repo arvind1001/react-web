@@ -1,9 +1,9 @@
 import React from 'react';
 import {Row,Col } from 'react-bootstrap';
-import health from '../../assets/images/health.jpg';
-import prosperity from '../../assets/images/prosperity.jpg';
-import inspire from '../../assets/images/inspire.jpg';
-import joy from '../../assets/images/joy.jpeg';
+import health from '../../assets/images/health.png';
+import prosperity from '../../assets/images/prosperity.png';
+import inspire from '../../assets/images/inspire.png';
+import joy from '../../assets/images/joy.png';
 import './HealthGallery.scss';
 const HealthGallery =()=> {
   return (

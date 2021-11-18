@@ -1,0 +1,198 @@
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+.banner-sec {
+    position: relative;
+    img {
+        height: 783px;
+        width: 100%;
+    }
+    &::before {
+        background-color: #2827278e;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    .content-sec {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        top: 80px;
+        h1 {
+            font-family: 'Montserrat-Bold';
+            font-size: 48px;
+            margin-left: 100px;
+        }
+        h2 {
+            font-family: 'Montserrat-Bold';
+            font-size: 48px;
+            margin-left: 100px;
+        }
+        .ban-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 100%;
+            padding: 0 160px;
+            margin-top: 200px;
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 0 auto;
+            }
+            .icon-sec {
+                width: 280px;
+                text-align: center;
+            }
+            p {
+                font-family: 'Lato-Regular';
+                font-size: 33px;
+                margin: 0;
+                line-height: 35px;
+            }
+            span {
+                font-family: 'Lato-Regular';
+                font-size: 25px;
+                margin: 0;
+                line-height: 26px;
+            }
+        }
+    }
+    .right-img {
+        position: absolute;
+        right: 0px;
+        right: 75px;
+        top: 75px;
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+.plan-head {
+    color: #636363;
+    text-align: center;
+    padding: 20px;
+    h1 {
+        font-family: 'Montserrat-Bold';
+        font-size: 40px;
+        margin: 0
+    }
+    p {
+        font-family: 'Lato-Regular';
+        font-size: 40px;
+        margin: 0
+    }
+}
+
+.plan-card {
+    width: 100%;
+    border: 1px solid #707070;
+    padding: 20px 0px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    .card-head {
+        background-color: #2DD237;
+        color: #fff;
+        text-align: center;
+        padding: 20px 5px;
+        h1 {
+            font-family: 'Segoe Regular';
+            font-size: 35px;
+            margin: 0;
+        }
+    }
+    .ex-price {
+        display: flex;
+        justify-content: center;
+        color: #585858;
+        padding: 10px 2px;
+        h2 {
+            font-size: 70px;
+            font-family: 'Lato-Bold';
+            sub {
+                bottom: 4px;
+                font-size: 35px;
+            }
+        }
+        span {
+            font-family: 'Segoe Regular';
+            font-size: 35px;
+            margin-top: 30px;
+        }
+    }
+    .card-detail {
+        text-align: center;
+        padding: 0 6px;
+        p {
+            font-family: 'Lato-Regular';
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+    }
+    .button-sec {
+        display: flex;
+        justify-content: center;
+        button {
+            font-family: 'Segoe Regular';
+            font-size: 30px;
+            border: 3px solid #2DD237;
+            background: #fff;
+            padding: 0px 20px;
+            border-radius: 44px;
+            color: #2DD237;
+            padding-bottom: 5px;
+            outline: none;
+        }
+    }
+    .mar-t {
+        margin-top: 6rem !important;
+    }
+}
+
+.plan-more {
+    h1,
+    p {
+        font-family: 'Lato-Bold';
+        font-size: 30px;
+        color: #585858;
+        span {
+            font-family: 'Lato-Regular';
+            font-size: 25px;
+        }
+    }
+}
+
+.plan-more-detail {
+    background: #F5F5F5;
+    h1 {
+        font-family: 'Montserrat-Bold';
+        font-size: 30px;
+        margin: 0;
+        color: #636363;
+        text-align: center;
+        padding: 12px 0
+    }
+}
+
+.plan-detail1 {
+    background-color: #DFDFDF;
+    padding: 20px 40px;
+    h1 {
+        font-family: 'Lato-Bold';
+        font-size: 30px;
+    }
+    p {
+        color: #585858;
+    }
+}
