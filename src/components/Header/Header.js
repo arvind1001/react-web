@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
-import lineIcon from '../../assets/images/line-icon.jpg';
+import lineIcon from '../../assets/images/line-icon.png';
 import logo from '../../assets/images/logo.png';
 import './Header.scss';
 

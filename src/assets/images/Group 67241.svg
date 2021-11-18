@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
-  <g id="Group_67241" data-name="Group 67241" transform="translate(-741 -437)">
-    <g id="Ellipse_409" data-name="Ellipse 409" transform="translate(741 437)" fill="none" stroke="#fff" stroke-width="5">
-      <circle cx="80" cy="80" r="80" stroke="none"/>
-      <circle cx="80" cy="80" r="77.5" fill="none"/>
-    </g>
-    <path id="Icon_material-important-devices" data-name="Icon material-important-devices" d="M83.321,35.64,65.208,35.6a3.633,3.633,0,0,0-3.623,3.623v32.6a3.633,3.633,0,0,0,3.623,3.623H83.321a3.633,3.633,0,0,0,3.623-3.623v-32.6A3.6,3.6,0,0,0,83.321,35.64Zm0,32.568H65.208V42.849H83.321ZM72.453,3H7.245A7.22,7.22,0,0,0,0,10.245V53.717a7.243,7.243,0,0,0,7.245,7.245H32.6v7.245H25.359v7.245H54.34V68.208H47.095V60.963H54.34V53.717H7.245V10.245H72.453V28.359H79.7V10.245A7.243,7.243,0,0,0,72.453,3ZM43.363,28.359,39.849,17.491,36.335,28.359H25.359l8.948,6.376L30.9,45.276l8.948-6.521L48.8,45.276,45.392,34.734l8.948-6.376Z" transform="translate(778 478)" fill="#fff"/>
-  </g>
-</svg>

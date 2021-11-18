@@ -20,16 +20,16 @@ const Register =()=> {
         </section>
     </div>
     <section className="p-tb-35">
-    <Container>
-           <Row>
-           <Col sm={12} md={6} >
-               <VisionaireForm/>
-               </Col>
-               <Col sm={12} md={6} className="border-lefts mobile-border-hide">
-               <HealthGallery/>
-               </Col>
-              </Row>
-        </Container>
+      <Container>
+            <Row>
+            <Col sm={12} md={6} >
+                <VisionaireForm/>
+                </Col>
+                <Col sm={12} md={6} className="border-lefts mobile-border-hide">
+                <HealthGallery/>
+                </Col>
+                </Row>
+      </Container>
     </section>
     </>
   );
