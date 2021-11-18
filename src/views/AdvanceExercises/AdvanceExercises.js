@@ -60,6 +60,35 @@ const AdvanceExercises = () => {
               </div>
               <img src={sliderImg} />
             </div>
+            <div className="slider-conatiner">
+              <div className="cente-text">
+                <h1>Advancement exercises</h1>
+                <p>Can be done anywhere- no specialised equipment required</p>
+                <button>Start Todat</button>
+                <div className="arrow-icon">
+                  <img src={barrow} />
+                </div>
+              </div>
+              <div className="right-icon">
+                <div className="tb-info">
+                  <span className="health-co">HEALTH</span>
+                  <img className="activeimg" src={Cluster1} />
+                </div>
+                <div className="tb-info">
+                  {/* <span className="pro-co">Prosperity</span> */}
+                  <img src={Cluster2} />
+                </div>
+                <div className="tb-info">
+                  {/* <span className="ins-co">Inspiration</span> */}
+                  <img src={Cluster3} />
+                </div>
+                <div className="tb-info">
+                  {/* <span className="joy-co">Joy</span> */}
+                  <img src={Cluster4} />
+                </div>
+              </div>
+              <img src={sliderImg} />
+            </div>
           </Slider>
 
         </Col>
