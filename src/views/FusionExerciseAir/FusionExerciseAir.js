@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import Slider from "react-slick";
+import SchedulerCalendar from 'scheduler-calendar'
+import 'scheduler-calendar/dist/index.css'
 import Header from '../../components/Header/Header';
 import playerIcon from '../../assets/images/personHealth.png';
 import bannerIng from '../../assets/images/fu-exercise2.png';
@@ -12,12 +15,25 @@ import fusionexc1 from '../../assets/images/fusionexc1.png';
 import fusionexc2 from '../../assets/images/fusionexc2.png';
 import fusionexc3 from '../../assets/images/fusionexc3.png';
 import fusionexc4 from '../../assets/images/fusionexc4.png';
-
 import checkIcon from '../../assets/images/check-icon.png';
 import smalPlayIcon from '../../assets/images/smal-play-icon.png';
 import mediumPlayIcon from '../../assets/images/medium-play-icon.png';
+import GrowDefault from '../../assets/images/Grow-default.png';
+import blackDiamond from '../../assets/images/black-diamond.png';
+
 import './FusionExerciseAir.scss';
+
 const FusionExerciseAir = () => {
+    var settings = {
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        autoplaySpeed: 1500,
+        speed: 1000,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+    };
     return (
         <>
             <Header />
@@ -121,14 +137,14 @@ const FusionExerciseAir = () => {
                             </div>
                             <div className="gal-con-img">
                                 <div className="fu-dis">
-                                <div className="fu-head">
-                                    <h2>AIR</h2>
+                                    <div className="fu-head">
+                                        <h2>AIR</h2>
                                     </div>
                                     <div className="fu-dis-con">
                                         <div className="fu-dis-txt">
-                                           
+
                                             <h4>Description: </h4>
-                                            
+
                                             <p>A low impact and intensity class to get you accustomed to the wide ranging benefits of Fusion and pave the way to greater holistic health. Ideal for all age groups. From as little as $1.00 per day</p>
                                         </div>
                                         <div className="fu-dis-time">
@@ -136,8 +152,8 @@ const FusionExerciseAir = () => {
                                             <p><span>MASTER</span>：Kim Larking</p>
                                         </div>
                                         <div className="fu-dis-btn">
-                                            <button>Preview <img src={smalPlayIcon}/></button>
-                                            <button>WATCH <img src={mediumPlayIcon}/></button>
+                                            <button>PREVIEW<img src={smalPlayIcon} /></button>
+                                            <button>WATCH <img src={mediumPlayIcon} /></button>
                                             <button>BOOK THIS</button>
                                         </div>
                                     </div>
@@ -149,10 +165,94 @@ const FusionExerciseAir = () => {
                         </div>
                     </Col>
                 </Row>
-
-
             </Row>
+            <Container>
+                <Row>
+                    <Col sm={12} md={12}>
+                        <div className="slider-secs">
+                            <h1>Our Fusion Facilitators and Masters</h1>
+                            <Slider {...settings}>
+                                <div className="slider-item">
+                                    <img src={blackDiamond} />
+                                    <h2>Kim Larking</h2>
+                                    <p>Exp: 35 years</p>
+                                    <p>Kim Larking, creator of Mind X Body Fusion Exercise, author of the book Health Psychology, 6th degree Kiaido Ryu black belt, aikido and yoga enthusiast, anti-aging and health span educator.</p>
+                                </div>
+                                <div className="slider-item">
+                                    <img src={GrowDefault} />
+                                    <h2>Watch Our Team <br />Grow</h2>
+                                    <p>As We Train Up Other</p>
+                                    <p>Fusion Experts</p>
+                                </div>
+                                <div className="slider-item">
+                                    <img src={GrowDefault} />
+                                    <h2>Watch Our Team <br />Grow</h2>
+                                    <p>As We Train Up Other</p>
+                                    <p>Fusion Experts</p>
+                                </div>
+                                <div className="slider-item">
+                                    <img src={GrowDefault} />
+                                    <h2>Watch Our Team <br />Grow</h2>
+                                    <p>As We Train Up Other</p>
+                                    <p>Fusion Experts</p>
+                                </div>
+                                <div className="slider-item">
+                                    <img src={GrowDefault} />
+                                    <h2>Watch Our Team <br />Grow</h2>
+                                    <p>As We Train Up Other</p>
+                                    <p>Fusion Experts</p>
+                                </div>
+                            </Slider>
+                        </div>
 
+                    </Col>
+                </Row>
+            </Container>
+            <Container>
+                <Row>
+                    <Col sm={12} md={3}>
+                    <div className="left-clender">
+                        <ul>
+                            <li>On Demand</li>
+                            <li className="cal-active">Live Session</li>
+                            <li>Calories</li>
+                            <li>Calender </li>
+                            <li>Guides</li>
+                            <li>Workshops</li>
+                            <li>Courses</li>
+                        </ul>
+                    </div>
+
+                    </Col>
+                    <Col sm={12} md={9}>
+                        <div className="gal-clender">
+                            <h1>More Information</h1>
+                            <SchedulerCalendar
+                                availabilities={[
+                                    {
+                                        day: "mon",
+                                        slots: [
+                                            { from: '09:00', to: '10:30' },
+                                            { from: '11:30', to: '13:00' },
+                                            { from: '14:30', to: '17:00' },
+                                        ]
+                                    },
+                                    {
+                                        day: "2021-01-26",
+                                        slots: [
+                                            { from: '09:00', to: '10:30' },
+                                            { from: '11:30', to: '19:00' },
+                                        ]
+                                    },
+                                ]}
+                                availabilityType={'infinity'}
+                                duration={10}
+                                onIntervalChange={() => { }}
+                            />
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </>
     );
 }

@@ -215,8 +215,8 @@
                     line-height: 15px;
                 }
                 img {
-                    width: 30px;
-                    margin-right: 15px;
+                    width: 25px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -225,7 +225,7 @@
         width: 50%;
         z-index: 4;
         .fu-dis {
-            width: 60%;
+            width: 65%;
             margin: 0 auto;
             margin-top: 50px;
             .fu-head {
@@ -285,6 +285,8 @@
                         border: 2px solid #898f95;
                         outline: none;
                         background-color: #fff;
+                        font-family: 'Lato-Regular';
+                        font-size: 14px;
                         span {
                             font-family: 'Lato-Regular';
                             font-size: 16px;
@@ -310,5 +312,66 @@
             width: 725px;
             height: 444px;
         }
+    }
+}
+
+.slider-secs {
+    h1 {
+        font-family: 'Montserrat-Medium';
+        font-size: 25px;
+        text-align: center;
+        padding: 40px 0 10px;
+    }
+    .slider-item {
+        padding: 10px 30px;
+        text-align: center;
+        h2 {
+            font-family: 'ARIAL';
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        p {}
+    }
+    .slick-prev:before {
+        content: "<";
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .slick-next:before {
+        content: ">";
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.left-clender {
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+    color: #9E9E9E;
+    margin-top: 140px;
+    ul {
+        border-right: 3px solid #efefef;
+        position: relative;
+    }
+    li {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .cal-active {
+        border-right: 3px solid #678eeb;
+        margin-right: -3px;
+    }
+}
+
+.gal-clender {
+    h1 {
+        font-family: 'Montserrat-Bold';
+        font-size: 26px;
+        color: #9E9E9E;
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
