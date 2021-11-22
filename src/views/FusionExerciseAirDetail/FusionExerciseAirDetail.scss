@@ -295,3 +295,281 @@
             }
         }
     }
+    
+    .sigment-img {
+        position: relative;
+        margin: 20px 0;
+        .nav-tabs {
+            border-bottom: 0
+        }
+        .nav-tabs .nav-link.active {
+            color: #495057;
+            background-image: linear-gradient(#e9e9e9, #fffff9);
+            border-color: #dee2e6;
+        }
+        .nav-tabs {
+            border-bottom: 0;
+            border: 1px solid #dee2e6;
+            display: inline-flex;
+            padding: 0;
+            border-radius: 4px;
+        }
+        .nav-link {
+            display: block;
+            padding: 0.2rem 2rem;
+            color: #8C8C8C;
+            font-family: 'Montserrat-Bold';
+            font-size: 16px;
+        }
+        .sigment-img-right {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 50px;
+        }
+        .sig-card {
+            font-family: 'Montserrat-Bold';
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: center;
+            img {
+                width: 160px;
+                height: 160px;
+                border-radius: 15px;
+            }
+            p {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+        }
+    }
+    
+    .cust-review {
+        position: relative;
+        margin-top: 30px;
+        font-family: 'Montserrat-Bold';
+        text-align: center;
+        h1 {
+            font-size: 25px;
+            color: #8C8C8C
+        }
+        img {
+            position: absolute;
+            right: 0;
+            top: 10px;
+            width: 25px;
+            cursor: pointer;
+        }
+    }
+    
+    .review-card {
+        margin: 10px 10px;
+        position: relative;
+        .card-review {
+            padding: 15px;
+            border: 1px solid rgb(197, 195, 195);
+            border-radius: 4px;
+            margin: 0 20px;
+            .head-sec {
+                display: flex;
+                align-items: center;
+                .head-info {
+                    margin-left: 15px;
+                    p {
+                        font-family: 'Lato-Bold';
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                    h1 {
+                        font-family: 'Lato-Bold';
+                        font-size: 20px;
+                    }
+                }
+            }
+            .star-info {
+                display: flex;
+                justify-content: space-between;
+                margin: 15px 10px 10px 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgb(226, 226, 226);
+                i {
+                    color: #FFAE31;
+                }
+                .no-colr {
+                    color: #B5B5B5;
+                }
+                p {
+                    margin: 0;
+                    font-family: 'Lato-Regular';
+                    font-size: 14px;
+                    color: #24231F;
+                }
+            }
+            .info2 {
+                padding: 10px;
+                position: relative;
+                p {
+                    padding: 10px 15px;
+                    margin: 0;
+                    color: #24231F;
+                    font-family: 'Lato-Light';
+                    font-size: 18px;
+                }
+                .img2 {
+                    position: absolute;
+                    right: 0;
+                }
+                span {
+                    display: block;
+                    text-align: right;
+                    padding-top: 30px;
+                    font-family: 'Lato-Light';
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+    .review-card::before {
+        content: '-';
+        position: absolute;
+        top: -29px;
+        left: 29px;
+        font-size: 38px;
+    }
+    
+    .exercise-programs {
+        padding: 30px 0;
+        h1 {
+            font-family: 'Montserrat-Bold';
+            font-size: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #8C8C8C;
+            margin: 20px 0;
+        }
+        .exercise-pro {
+            margin: 0 20px;
+            .sig-card {
+                font-family: 'Montserrat-Bold';
+                font-size: 14px;
+                text-align: center;
+                margin: 0 20px;
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+                p {
+                    margin-bottom: 5px;
+                    text-align: center;
+                    font-family: 'Lato-light';
+                }
+            }
+        }
+    }
+    
+    .left-chart {
+        font-family: 'Montserrat-Bold';
+        font-size: 22px;
+        color: #9E9E9E;
+        margin-top: 10px;
+        ul {
+            border-right: 3px solid #efefef;
+            position: relative;
+        }
+        li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        .cal-active {
+            border-right: 3px solid #678eeb;
+            margin-right: -3px;
+        }
+    }
+    
+    .char-setion {
+        .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #ff9c9c #ff9c9c #fff;
+        }
+        .tab-content {
+            border: 1px solid #ff9c9c;
+            margin-top: -1px;
+            padding: 15px;
+        }
+        .table-bordered td,
+        .table-bordered th {
+            border: 0px solid #dee2e6;
+        }
+        .table-bordered {
+            border: 0px solid #dee2e6;
+        }
+        tbody {
+            font-family: 'Lato-Regular';
+            tr {
+                td {
+                    i {
+                        font-size: 13px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+            tr:nth-child(1) {
+                td:nth-child(1) {
+                    i {
+                        color: #3ef73e;
+                    }
+                }
+            }
+            tr:nth-child(2) {
+                td:nth-child(1) {
+                    i {
+                        color: #f7e53e;
+                    }
+                }
+            }
+            tr:nth-child(3) {
+                td:nth-child(1) {
+                    i {
+                        color: #2d902d;
+                    }
+                }
+            }
+            tr:nth-child(4) {
+                td:nth-child(1) {
+                    i {
+                        color: #f73eb9;
+                    }
+                }
+            }
+            tr:nth-child(5) {
+                td:nth-child(1) {
+                    i {
+                        color: #f73e3e;
+                    }
+                }
+            }
+            tr:nth-child(6) {
+                td:nth-child(1) {
+                    i {
+                        color: #60a5f5;
+                    }
+                }
+            }
+            tr:nth-child(7) {
+                td:nth-child(1) {
+                    i {
+                        color: #be6fa0;
+                    }
+                }
+            }
+            tr:nth-child(8) {
+                td:nth-child(1) {
+                    i {
+                        color: #ca8c27;
+                    }
+                }
+            }
+        }
+    }
