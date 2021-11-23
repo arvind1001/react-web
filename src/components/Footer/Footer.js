@@ -1,16 +1,18 @@
 import React from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
+import { useLocation } from 'react-router-dom';
 import BeComeButton from '../../components/BeComeButton/BeComeButton';
 import './Footer.scss';
 
 const Footer=()=> {
+    const { pathname } = useLocation();
   return (
     <footer>
   <Container>
   <Row>
             <Col sm={12} md={5} className="dis-cover cols">
                 <p className="font-weight-bold">Discover your Magnificence by becoming a Urban Sanctuary Visionaire</p>
-                <BeComeButton/>
+                <BeComeButton />
             </Col>
 
             <Col sm={12} md={1} className=" footer-col cols">
@@ -34,12 +36,12 @@ const Footer=()=> {
             <Col sm={12} md={3} className="footer-col-2 cols">
                 <ul className="footer-inf font-weight-bold">
                     <li>URBAN SANCTURIES - VISION FOR HUMANITY</li>
-                    <li className="font-weight-light">Cick here to integrate your Visionaire accounts</li>
+                    <li className="font-weight-light"  style={{ color: pathname === '/store-service-skin-analysis'|| pathname =='/store-service-inbody-scanning' ? '#9AA200' : '' }}>Cick here to integrate your Visionaire accounts</li>
                     <li>(09) 353-7890</li>
                     <li>Level 3, 2 St Martins Lane,<br/>Prosper Grafton, Auckland 1010<br/>New Zealand</li>
                 </ul>
             </Col>
-            <Col sm={12} md={2} className="footer-icon">
+            <Col sm={12} md={2} className="footer-icon" style={{ color: pathname === '/store-service-skin-analysis' || pathname =='/store-service-inbody-scanning' ? '#9AA200' : '' }}>
                 <i className="fab fa-instagram"></i>
                 <i className="fab fa-twitter"></i>
                 <i className="fab fa-facebook-f"></i>
