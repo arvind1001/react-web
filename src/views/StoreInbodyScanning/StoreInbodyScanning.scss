@@ -1,0 +1,235 @@
+        .banner-scanning {
+            position: relative;
+            img {
+                height: 783px;
+                width: 100%;
+            }
+            &::before {
+                background-color: #1d1c1cc7;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+            .content-sec {
+                position: absolute;
+                width: 80%;
+                top: 48px;
+                z-index: 9;
+                display: flex;
+                justify-content: space-between;
+                align-self: start;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                .content-left {
+                    color: #fff;
+                    padding-left: 50px;
+                    h1 {
+                        font-family: 'Montserrat-Bold';
+                        font-size: 28px;
+                        margin-bottom: 40px;
+                    }
+                    p:nth-child(1) {
+                        font-size: 16px;
+                        font-family: 'Montserrat-Medium';
+                        opacity: .5;
+                    }
+                }
+                .socil-img {
+                    color: #C5D003;
+                    i {
+                        padding: 0 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .img-content {
+                position: absolute;
+                right: 0px;
+                left: 186px;
+                top: 200px;
+                display: flex;
+                align-items: center;
+                .skinNewobs {
+                    position: relative;
+                    img {
+                        width: 280px;
+                        height: auto;
+                    }
+                    h4 {
+                        bottom: 28px;
+                        right: 22px;
+                        position: absolute;
+                        color: #C5D003;
+                        font-family: 'Lato-Bold';
+                        font-size: 18px;
+                    }
+                }
+                .skin-banner-txt {
+                    padding-left: 50px;
+                    width: 45%;
+                    h1 {
+                        font-family: 'Lato-Bold';
+                        font-size: 40px;
+                        margin-bottom: 20px;
+                        color: #C5D003;
+                    }
+                    h4 {
+                        font-family: 'Lato-Bold';
+                        font-size: 25px;
+                        margin-bottom: 20px;
+                        color: #fff;
+                    }
+                    p {
+                        font-family: 'Lato-Regular';
+                        font-size: 16px;
+                        padding: 5px 20px 5px 0;
+                        color: #fff;
+                    }
+                    .link-img {
+                        text-align: center;
+                        margin-top: 20px;
+                        a {
+                            cursor: pointer;
+                            color: #fff;
+                            margin-right: 5px;
+                            i {
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+                .scannNewsRun {
+                    position: absolute;
+                    right: 59px;
+                    bottom: -109px;
+                    img {
+                        width: auto;
+                        height: 740px;
+                    }
+                }
+            }
+        }
+        
+        .running-scanning {
+            position: relative;
+            margin: 60px 0 0 0;
+            img {
+                // height: 620px;
+                width: 100%;
+            }
+            &::before {
+                background-color: #1d1c1cc7;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                width: 100%;
+            }
+            .scanning-sec {
+                position: absolute;
+                padding: 0 50px;
+                .running-text {
+                    color: #fff;
+                    padding: 40px 0;
+                    h4 {
+                        font-family: 'ARIAL';
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-family: 'Lato-Regular';
+                        font-size: 15px;
+                    }
+                    P:last-child {
+                        padding: 20px 0 0 5px;
+                    }
+                    li {
+                        display: flex;
+                        padding: 10px 10px;
+                        p {
+                            font-family: 'Lato-Bold';
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                        span {
+                            font-family: 'Lato-Regular';
+                            font-size: 14px;
+                        }
+                        img {
+                            height: 20px;
+                            width: auto;
+                            margin-right: 10px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+                .runnig-img {
+                    img {
+                        width: 100%;
+                        margin-top: -50px;
+                    }
+                }
+            }
+        }
+        
+        .scanning-info {
+            padding: 50px 0;
+            position: relative;
+            img {
+                position: absolute;
+                left: -24px;
+                height: 710px;
+                top: -130px;
+            }
+            .scanning-text {
+                width: 65%;
+                margin: 0 auto;
+                background-color: #F6F6F6;
+                padding: 40px;
+                h4 {
+                    font-family: 'Avenir';
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: #8C8C8C;
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-family: 'Lato-Regular';
+                    font-size: 14px;
+                    color: #595959;
+                }
+            }
+        }
+        
+        .scann-data {
+            background-color: #9aa20009;
+            padding: 30px 50px;
+            .scanning-data {
+                h4 {
+                    font-family: 'Avenir';
+                    font-weight: normal;
+                    font-size: 25px;
+                    color: #8C8C8C;
+                    text-align: center;
+                    margin-bottom: 25px;
+                }
+                ul {
+                    li {
+                        font-family: 'Helvetica-Regular';
+                        font-size: 14px;
+                        color: #595959;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+            .scanning-data-img {
+                img {
+                    height: 560px;
+                    margin-top: -25px;
+                }
+            }
+        }

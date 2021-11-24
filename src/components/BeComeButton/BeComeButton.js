@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import greenButton from '../../assets/images/green-btns.png';
 import './BeComeButton.scss';
 
-
 const BeComeButton = () => {
   const { pathname } = useLocation();
   return (
@@ -18,7 +17,6 @@ const BeComeButton = () => {
         )}
       </div>
     </>
-
   );
 }
 

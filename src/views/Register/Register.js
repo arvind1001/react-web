@@ -13,7 +13,7 @@ const Register =()=> {
          
         <section>
             <Row>
-            <Col sm={12} md={12} className="banner-content">
+            <Col sm={12} md={12} className="r-banner-content">
                     <h1>Get Started</h1>
                 </Col>
             </Row>

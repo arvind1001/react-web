@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Container,Row,Col } from 'react-bootstrap';
 import lineIcon from '../../assets/images/line-icon.png';
 import logo from '../../assets/images/logo.png';
+import searchIcon from '../../assets/images/search-icon.png';
+import cartIcon from '../../assets/images/cart-icon.png';
+import profileIcon from '../../assets/images/profile-icon.png';
+import moreIcons from '../../assets/images/more-icons.png';
 import './Header.scss';
 
 const Header=() =>{
@@ -18,6 +22,13 @@ const Header=() =>{
       setButton(true);
     }
   };
+  const toggleSideNav=()=>{
+        if(document.getElementById("mySidenav").style.width == "250px"){
+          document.getElementById("mySidenav").style.width = "0px";
+        }else{
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+  }
 
   useEffect(() => {
     showButton();
@@ -68,24 +79,18 @@ const Header=() =>{
                                         <a className="nav-link" href="#">About us <span className="sr-only">(current)</span></a>
                                     </li>
                                     <li className="nav-item custom-dropdwn">
-                                        <div className="nav-link custom-dropdwn-link" href="#">discover
-                                            <i className="fas fa-angle-down"></i>
-                                            <div className="dropdown-content">
-                                                <a href="#">Link 1</a>
-                                                <a href="#">Link 2</a>
-                                                <a href="#">Link 3</a>
-                                            </div>
-                                        </div>
+                                    <a className="nav-link" href="#">discover</a>
                                     </li>
                                     <li className="nav-item custom-dropdwn">
-                                        <div className="nav-link custom-dropdwn-link" href="#">services
+                                    <a className="nav-link" href="#">services</a>
+                                        {/* <div className="nav-link custom-dropdwn-link" href="#">services
                                             <i className="fas fa-angle-down"></i>
                                             <div className="dropdown-content">
                                                 <a href="#">Link 1</a>
                                                 <a href="#">Link 2</a>
                                                 <a href="#">Link 3</a>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="#">participate</a>
@@ -105,34 +110,35 @@ const Header=() =>{
                         <ul className="d-flex justify-content-end align-items-center">
                             <li className="nav-item">
                                 <a className="nav-link">
-                                    <i className="fas fa-shopping-cart"></i>
+                                    <img src={searchIcon}/>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link">
-                                    <i className="fas fa-map-marker-alt"></i>
+                                <img src={cartIcon}/>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link">
-                                    <i className="fas fa-user"></i>
+                                <img src={profileIcon}/>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link">
-                                    <i className="fas fa-th-large"></i>
+                                <img src={moreIcons}/>
                                 </a>
                             </li>
 
                         </ul>
                     </Col>
+
                     <Col md={12} className="desk-hide">
                         <div className="mobile-menu">
-                            <a className="navbar-brand"><img src="./images/logo.jpg"/></a>
-                            <span onclick="toggleSideNav()">&#9776;</span>
+                            <a className="navbar-brand"><img src={logo}/></a>
+                            <span onClick={toggleSideNav}>&#9776;</span>
                         </div>
                         <div id="mySidenav" className="sidenav">
-                            <a href="javascript:void(0)" className="closebtn" onclick="toggleSideNav()">&times;</a>
+                            <a href="javascript:void(0)" className="closebtn" onClick={toggleSideNav}>&times;</a>
                             <a href="#">About us </a>
                             <a href="#">discover</a>
                             <a href="#">services</a>

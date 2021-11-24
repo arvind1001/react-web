@@ -6,7 +6,6 @@ import skinNewobs from '../../assets/images/skin-newobs.png';
 import bannerImg from '../../assets/images/skin-banner-img.png';
 import yearRank from '../../assets/images/year-rank.png';
 import metroPin from '../../assets/images/Icon-metro-pin.png';
-
 import LightModesFace from '../../assets/images/8-light-modes-face.png';
 import testingDevice from '../../assets/images/testing-device.png';
 import mobileImg from '../../assets/images/mobile-img.png';

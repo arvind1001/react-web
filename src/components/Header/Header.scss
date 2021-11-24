@@ -58,10 +58,11 @@
     box-shadow: 0px 2px 5px 0 #07070733;
     .nav-link {
         text-transform: uppercase;
-        font-family: 'Heebo-Regular';
-        font-size: 14px;
+        font-family: 'Heebo-Medium';
+        font-size: 16x;
         color: #000;
         white-space: nowrap;
+        cursor: pointer;
     }
     .nav-link {
         padding: .5rem .8rem;
@@ -75,7 +76,7 @@
     display: flex;
     img:nth-child(1) {
         margin-right: 15px;
-        width: 54px;
+        width: 77px;
         padding: 8px;
     }
     img:nth-child(2) {
@@ -154,10 +155,11 @@
     a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 22px;
+        font-size: 20px;
         color: #fff;
         display: block;
         transition: 0.3s;
+        text-transform: uppercase;
     }
     a:hover {
         color: #818181;
