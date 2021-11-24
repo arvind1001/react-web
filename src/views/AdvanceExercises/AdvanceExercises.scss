@@ -430,6 +430,13 @@
 
 .shifter-plan {
     margin: 10px 0 0;
+    position: fixed;
+    bottom: 0;
+    transition: 2s;
+    z-index: 9;
+    padding: 20px 60px 0 60px;
+    width: 100%;
+    background: #fff;
     h3 {
         color: #8dd54f;
         font-size: 18px;
@@ -453,8 +460,18 @@
                 color: #fff;
                 background: #8dd54f;
                 padding: 5px 80px;
-                margin: 20px auto;
+                margin: 20px auto 10px;
             }
         }
     }
+}
+
+.showForm {
+    bottom: 0px;
+    transition: 2s;
+}
+
+.hideForm {
+    bottom: -400px;
+    transition: 2s;
 }

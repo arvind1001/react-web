@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import Header from '../../components/Header/Header';
@@ -18,6 +18,15 @@ import editIcons from '../../assets/images/edit-icons.png'
 import './AdvanceExercises.scss';
 
 const AdvanceExercises = () => {
+  const [scrollPage, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset)
+    }
+  }, []);
+  console.log(scrollPage); 
+
   var settings = {
     dots: true,
     infinite: true,
@@ -378,13 +387,13 @@ const AdvanceExercises = () => {
           </div>
         </Col>
       </Row>
-      <Container>
-      <div className="shifter-plan">
+
+      <div className={`shifter-plan ${scrollPage>500?'showForm':'hideForm'}`}>
         <h3>WEIGHT SHIFTER PLAN</h3>
         <Row>
-          <Col sm={12} md={6}>
+          <Col sm={12} md={6} className="mx-auto">
             <div className="ex-plans">
-              <p>or Select an existing Exercise plan</p>
+              <p>Create a new Meal Plan</p>
               <div class="form-group">
                 <label>Exercise Plan Name</label>
                 <input type="text" class="form-control" placeholder="Plan Name" />
@@ -404,7 +413,7 @@ const AdvanceExercises = () => {
               </div>
             </div>
           </Col>
-          <Col sm={12} md={6}>
+          {/* <Col sm={12} md={6}>
             <div className="ex-plans">
               <p>or Select an existing Exercise plan</p>
               <div class="form-group">
@@ -421,10 +430,10 @@ const AdvanceExercises = () => {
                 </div>
               </div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </div>
-      </Container>
+      
     </>
   );
 }
