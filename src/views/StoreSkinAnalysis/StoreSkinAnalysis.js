@@ -152,7 +152,7 @@ const StoreSkinAnalysis = () => {
         <Row>
           <Col sm={12} md={12}>
             <div className="finds-store">
-              <h4>Create natural beauty through a comprehensive wellness plan</h4>
+              <h4>Create a life of limitless potential with an Optimize epigenetic report and free your genes today?</h4>
               <div className="store-btn">
                 <button>Find a Store</button>
               </div>
