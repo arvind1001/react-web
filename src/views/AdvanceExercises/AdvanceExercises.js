@@ -388,7 +388,7 @@ const AdvanceExercises = () => {
         </Col>
       </Row>
 
-      <div className={`shifter-plan ${scrollPage>500?'showForm':'hideForm'}`}>
+      <div className={`shifter-plan ${scrollPage>2050?'showForm':'hideForm'}`}>
         <h3>WEIGHT SHIFTER PLAN</h3>
         <Row>
           <Col sm={12} md={6} className="mx-auto">
