@@ -35,8 +35,8 @@ const Footer=()=> {
             </Col>
             <Col sm={12} md={3} className="footer-col-2 cols">
                 <ul className="footer-inf font-weight-bold">
-                    <li>URBAN SANCTURIES - VISION FOR HUMANITY</li>
-                    <li className="font-weight-light"  style={{ color: pathname === '/store-service-skin-analysis'|| pathname =='/store-service-inbody-scanning' ? '#9AA200' : '' }}>Cick here to integrate your Visionaire accounts</li>
+                    <li className="f-font-famB">URBAN SANCTURIES - VISION FOR HUMANITY</li>
+                    <li className="font-weight-light f-font-famL"  style={{ color: pathname === '/store-service-skin-analysis'|| pathname =='/store-service-inbody-scanning' ? '#9AA200' : '' }}>Cick here to integrate your Visionaire accounts</li>
                     <li>(09) 353-7890</li>
                     <li>Level 3, 2 St Martins Lane,<br/>Prosper Grafton, Auckland 1010<br/>New Zealand</li>
                 </ul>

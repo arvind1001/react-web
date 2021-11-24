@@ -1,16 +1,29 @@
 footer {
     padding: 30px 0;
     background-color: #f7f7f7;
+    .dis-cover {
+        p {
+            font-family: 'Montserrat-SemiBold';
+            font-size: 13px;
+        }
+    }
 }
 
 .footer-inf li {
     font-size: 13px;
     margin-bottom: 3px;
+    .f-font-famB {
+        font-family: 'Lato-Bold';
+    }
+    .f-font-famL {
+        font-family: 'Lato-Light';
+    }
 }
 
 .footer-menu li a {
     font-size: 14px;
-    color: #797979;
+    color: #000000;
+    font-family: 'Montserrat-Medium';
 }
 
 .footer-icon i {

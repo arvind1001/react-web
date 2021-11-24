@@ -39,7 +39,10 @@
     font-family: 'georgia';
     src: url(../../assets/fonts/georgia/georgia.ttf);
 }
-
+@font-face {
+    font-family: 'georgiz';
+    src: url(../../assets/fonts/georgia/georgia.ttf);
+}
 // Lato
 @font-face {
     font-family: 'Lato-Black';
@@ -51,6 +54,10 @@
     src: url(../../assets/fonts/lato/Lato-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(../../assets/fonts/lato/Lato-Light.ttf);
+}
 @font-face {
     font-family: 'Lato-Regular';
     src: url(../../assets/fonts/lato/Lato-Regular.ttf);
@@ -92,10 +99,19 @@
     font-family: 'Montserrat-Medium';
     src: url(../../assets/fonts/Montserrat/Montserrat-Medium.ttf);
 }
+@font-face {
+    font-family: 'Montserrat-Medium-Italic';
+    src: url(../../assets/fonts/Montserrat/Montserrat-MediumItalic.ttf);
+}
 
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url(../../assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
 
 // Segoe UI
@@ -108,7 +124,19 @@
     font-family: 'Segoe Bold';
     src: url(../../assets/fonts/Segoe/Segoe-UI-Bold.ttf);
 }
-
+//BAHNSCHRIFT FONTS
+@font-face {
+    font-family: 'BAHNSCHRIFT';
+    src: url(../../assets/fonts/Bahnschrift/BAHNSCHRIFT.TTF);
+}
+@font-face {
+    font-family: 'BAHNSCHRIFT 1';
+    src: url(../../assets/fonts/Bahnschrift/BAHNSCHRIFT-1.TTF);
+}
+@font-face {
+    font-family: 'BAHNSCHRIFT 2';
+    src: url(../../assets/fonts/Bahnschrift/BAHNSCHRIFT-2.TTF);
+}
 // Arial 
 @font-face {
     font-family: 'ARIAL';
