@@ -3,10 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Header from '../../components/Header/Header';
 import playerIcon from '../../assets/images/personHealth.png'
 import bannerIng from '../../assets/images/fu-exercise2.png';
-import bannerIcon1 from '../../assets/images/exe-icon1.png';
-import bannerIcon2 from '../../assets/images/exe-icon2.png';
-import bannerIcon3 from '../../assets/images/exe-icon3.png';
-import bannerIcon4 from '../../assets/images/exe-icon4.png';
+import bannerIcon1 from '../../assets/images/booking-plan/exe-icon1.png';
+import bannerIcon2 from '../../assets/images/booking-plan/exe-icon2.png';
+import bannerIcon3 from '../../assets/images/booking-plan/exe-icon3.png';
+import bannerIcon4 from '../../assets/images/booking-plan/exe-icon4.png';
 
 import './BookingPlan.scss';
 const BookingPlan = () => {

@@ -2,22 +2,22 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'scheduler-calendar/dist/index.css'
 import Header from '../../components/Header/Header';
-import weighting from '../../assets/images/weighting.png';
-import machinesBanner from '../../assets/images/machines-banner.png';
-import compositionInbody from '../../assets/images/composition-inbody.png';
-import scannChecked from '../../assets/images/scann-checked.png';
-import scanningRunBack from '../../assets/images/scanning-run-back.png';
-import runningStaire from '../../assets/images/running-staire.png';
-import degreeLeft from '../../assets/images/degree_left-1.png';
-import scanData from '../../assets/images/scan-data.png';
-import Fit3ddata from '../../assets/images/Fit3d-data.png';
-import scannMobile from '../../assets/images/scann-mobile.png';
-import bodybuilder from '../../assets/images/young-bodybuilder.png';
+import weighting from '../../assets/images/body-scanning/weighting.png';
+import machinesBanner from '../../assets/images/body-scanning/machines-banner.png';
+import compositionInbody from '../../assets/images/body-scanning/composition-inbody.png';
+import scannChecked from '../../assets/images/body-scanning/scann-checked.png';
+import scanningRunBack from '../../assets/images/body-scanning/scanning-run-back.png';
+import runningStaire from '../../assets/images/body-scanning/running-staire.png';
+import degreeLeft from '../../assets/images/body-scanning/degree_left-1.png';
+import scanData from '../../assets/images/body-scanning/scan-data.png';
+import Fit3ddata from '../../assets/images/body-scanning/Fit3d-data.png';
+import scannMobile from '../../assets/images/body-scanning/scann-mobile.png';
+import bodybuilder from '../../assets/images/body-scanning/young-bodybuilder.png';
 import pic1 from '../../assets/images/pic1.png';
 import pic3 from '../../assets/images/pic3.png';
-import vedioscanning from '../../assets/images/vedio-scanning.png';
+import vedioscanning from '../../assets/images/body-scanning/vedio-scanning.png';
 import skinPlayerBtn from '../../assets/images/skin-player-btn.png';
-import BookAppointment from '../../assets/images/book-appointment.png';
+import BookAppointment from '../../assets/images/body-scanning/book-appointment.png';
 import './StoreInbodyScanning.scss';
 const StoreInbodyScanning = () => {
   return (

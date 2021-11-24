@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
 import Header from '../../components/Header/Header';
-import sliderImg from '../../assets/images/acro-yoga.jpg';
+import sliderImg from '../../assets/images/advance-exercises/acro-yoga.jpg';
 import Cluster1 from '../../assets/images/Cluster-1.png'
 import Cluster2 from '../../assets/images/Cluster-2.png'
 import Cluster3 from '../../assets/images/Cluster-3.png'
 import Cluster4 from '../../assets/images/Cluster-4.png'
 import barrow from '../../assets/images/b-arrow.png'
+import shifterApp from '../../assets/images/shifterapp.png';
+import creatorApp from '../../assets/images/creatorapp.png';
 import playerIcon from '../../assets/images/player-icon.png'
 import personHealth from '../../assets/images/personHealth.png'
 import circleIon from '../../assets/images/circle-ion.png'
@@ -115,8 +117,8 @@ const AdvanceExercises = () => {
           </Col>
           <Col sm={12} md={5}>
             <div className="app-btn">
-              <button><img src={circleIon} /> WEIGHT SHIFTER APP</button>
-              <button><img src={circleIon} /> HEALTH CREATOR APP</button>
+              <button><img src={shifterApp} /> WEIGHT SHIFTER APP</button>
+              <button><img src={creatorApp} /> HEALTH CREATOR APP</button>
             </div>
           </Col>
         </Row>

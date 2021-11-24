@@ -12,7 +12,7 @@ import editIcons from '../../assets/images/edit-icons.png';
 import shifterApp from '../../assets/images/shifterapp.png';
 import creatorApp from '../../assets/images/creatorapp.png';
 import blackDiamond from '../../assets/images/black-diamond.png';
-import Yoga from '../../assets/images/yoga.png';
+import Yoga from '../../assets/images/exercise_air_detail/yoga.png';
 import favIcon1 from '../../assets/images/fav_icon1.png';
 import favIcon2 from '../../assets/images/fav_icon2.png';
 import Cluster1 from '../../assets/images/Cluster-1.png';
@@ -20,24 +20,24 @@ import Cluster2 from '../../assets/images/Cluster-2.png';
 import Cluster3 from '../../assets/images/Cluster-3.png';
 import Cluster4 from '../../assets/images/Cluster-4.png';
 import playerIcons from '../../assets/images/player-icon.png';
-import nounVideo from '../../assets/images/noun_Video.png';
-import sigment1 from '../../assets/images/sigment1.png';
-import sigment2 from '../../assets/images/sigment2.png';
-import sigment3 from '../../assets/images/sigment3.png';
-import sigment4 from '../../assets/images/sigment4.png';
-import sigment5 from '../../assets/images/sigment5.png';
-import sigment6 from '../../assets/images/sigment6.png';
-import sigment7 from '../../assets/images/sigment7.png';
+import nounVideo from '../../assets/images/exercise_air_detail/noun_Video.png';
+import sigment1 from '../../assets/images/exercise_air_detail/sigment1.png';
+import sigment2 from '../../assets/images/exercise_air_detail/sigment2.png';
+import sigment3 from '../../assets/images/exercise_air_detail/sigment3.png';
+import sigment4 from '../../assets/images/exercise_air_detail/sigment4.png';
+import sigment5 from '../../assets/images/exercise_air_detail/sigment5.png';
+import sigment6 from '../../assets/images/exercise_air_detail/sigment6.png';
+import sigment7 from '../../assets/images/exercise_air_detail/sigment7.png';
 import editIcon from '../../assets/images/edit-icon.png';
 import pic1 from '../../assets/images/pic1.png'
 import pic2 from '../../assets/images/pic2.png'
 import pic3 from '../../assets/images/pic3.png'
 import startCom from '../../assets/images/start-com.png'
 import endCom from '../../assets/images/end-com.png'
-import otherImg1 from '../../assets/images/other-img-1.png'
-import otherImg2 from '../../assets/images/other-img-2.png'
-import otherImg3 from '../../assets/images/other-img-3.png'
-import otherImg4 from '../../assets/images/other-img-4.png'
+import otherImg1 from '../../assets/images/exercise_air_detail/other-img-1.png'
+import otherImg2 from '../../assets/images/exercise_air_detail/other-img-2.png'
+import otherImg3 from '../../assets/images/exercise_air_detail/other-img-3.png'
+import otherImg4 from '../../assets/images/exercise_air_detail/other-img-4.png'
 import './FusionExerciseAirDetail.scss';
 const data = {
   labels: ['Fusion Air', 'Fusion Water', 'Fusion Crystal', 'Fusion Diamond', 'Vinyasa 1','Vinyasa 2','Modern Dance','Classic Dance'],
@@ -162,7 +162,7 @@ const FusionExerciseAirDetail = () => {
               <div className="vedio-con">
                 <div className="vedios">
                   <img src={Yoga} />
-                  <img src={startCom} />
+                  <img src={playerIcons} />
                 </div>
                 <div className="vedios-pagi">
                   <p>On Demand air classes:</p>

@@ -332,6 +332,11 @@
             margin: 10px 0;
         }
         p {}
+        img {
+            border-radius: 50%;
+            height: 250px;
+            width: 250px;
+        }
     }
     .slick-prev:before {
         content: "<";
