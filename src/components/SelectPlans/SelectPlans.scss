@@ -1,0 +1,82 @@
+.plan-head {
+    color: #636363;
+    text-align: center;
+    padding: 20px;
+    h1 {
+        font-family: 'Montserrat-Bold';
+        font-size: 30px;
+        margin: 0
+    }
+    p {
+        font-family: 'Lato-Regular';
+        font-size: 25px;
+        margin: 0
+    }
+}
+
+.plan-card {
+    width: 100%;
+    border: 1px solid #707070;
+    padding: 20px 0px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    min-height: 506px;
+    .card-head {
+        background-color: #2DD237;
+        color: #fff;
+        text-align: center;
+        padding: 15px 5px;
+        h1 {
+            font-family: 'Segoe Regular';
+            font-size: 30px;
+            margin: 0;
+        }
+    }
+    .ex-price {
+        display: flex;
+        justify-content: center;
+        color: #585858;
+        padding: 10px 2px;
+        h2 {
+            font-size: 40px;
+            font-family: 'Lato-Bold';
+            sub {
+                bottom: 4px;
+                font-size: 20px;
+            }
+        }
+        span {
+            font-family: 'Segoe Regular';
+            font-size: 25px;
+            margin-top: 3px;
+        }
+    }
+    .card-detail {
+        text-align: center;
+        padding: 0 50px;
+        p {
+            font-family: 'Lato-Regular';
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    .button-sec {
+        display: flex;
+        justify-content: center;
+        button {
+            font-family: 'Segoe Regular';
+            font-size: 20px;
+            border: 3px solid #2DD237;
+            background: #fff;
+            padding: 0px 20px;
+            border-radius: 44px;
+            color: #2DD237;
+            padding-bottom: 5px;
+            outline: none;
+        }
+    }
+    .mar-t {
+        margin-top: 7rem !important;
+    }
+}

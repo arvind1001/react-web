@@ -10,7 +10,7 @@
 .banner-sec {
     position: relative;
     img {
-        height: 783px;
+        height: 683px;
         width: 100%;
     }
     &::before {
@@ -26,14 +26,15 @@
         width: 100%;
         color: #fff;
         top: 80px;
+        z-index: 12;
         h1 {
             font-family: 'Montserrat-Bold';
-            font-size: 48px;
+            font-size: 35px;
             margin-left: 100px;
         }
         h2 {
             font-family: 'Montserrat-Bold';
-            font-size: 48px;
+            font-size: 35px;
             margin-left: 100px;
         }
         .ban-icons {
@@ -43,24 +44,25 @@
             width: 100%;
             padding: 0 160px;
             margin-top: 200px;
+            flex-wrap: wrap;
             img {
                 width: 120px;
                 height: 120px;
                 margin: 0 auto;
             }
             .icon-sec {
-                width: 280px;
+                width: 205px;
                 text-align: center;
             }
             p {
                 font-family: 'Lato-Regular';
-                font-size: 33px;
+                font-size: 20px;
                 margin: 0;
                 line-height: 35px;
             }
             span {
                 font-family: 'Lato-Regular';
-                font-size: 25px;
+                font-size: 20px;
                 margin: 0;
                 line-height: 26px;
             }
@@ -78,123 +80,47 @@
     }
 }
 
-.plan-head {
-    color: #636363;
-    text-align: center;
-    padding: 20px;
-    h1 {
-        font-family: 'Montserrat-Bold';
-        font-size: 40px;
-        margin: 0
-    }
-    p {
-        font-family: 'Lato-Regular';
-        font-size: 40px;
-        margin: 0
-    }
-}
-
-.plan-card {
-    width: 100%;
-    border: 1px solid #707070;
-    padding: 20px 0px;
-    border-radius: 6px;
-    margin-bottom: 30px;
-    .card-head {
-        background-color: #2DD237;
-        color: #fff;
-        text-align: center;
-        padding: 20px 5px;
-        h1 {
-            font-family: 'Segoe Regular';
-            font-size: 35px;
-            margin: 0;
-        }
-    }
-    .ex-price {
-        display: flex;
-        justify-content: center;
-        color: #585858;
-        padding: 10px 2px;
-        h2 {
-            font-size: 70px;
-            font-family: 'Lato-Bold';
-            sub {
-                bottom: 4px;
-                font-size: 35px;
-            }
-        }
-        span {
-            font-family: 'Segoe Regular';
-            font-size: 35px;
-            margin-top: 30px;
-        }
-    }
-    .card-detail {
-        text-align: center;
-        padding: 0 6px;
-        p {
-            font-family: 'Lato-Regular';
-            font-size: 30px;
-            line-height: 35px;
-            margin-bottom: 30px;
-        }
-    }
-    .button-sec {
-        display: flex;
-        justify-content: center;
-        button {
-            font-family: 'Segoe Regular';
-            font-size: 30px;
-            border: 3px solid #2DD237;
-            background: #fff;
-            padding: 0px 20px;
-            border-radius: 44px;
-            color: #2DD237;
-            padding-bottom: 5px;
-            outline: none;
-        }
-    }
-    .mar-t {
-        margin-top: 6rem !important;
-    }
-}
-
 .plan-more {
     h1,
     p {
         font-family: 'Lato-Bold';
-        font-size: 30px;
+        font-size: 20px;
         color: #585858;
         span {
             font-family: 'Lato-Regular';
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 }
 
-.plan-more-detail {
-    background: #F5F5F5;
-    h1 {
-        font-family: 'Montserrat-Bold';
-        font-size: 30px;
-        margin: 0;
-        color: #636363;
-        text-align: center;
-        padding: 12px 0
-    }
-}
-
-.plan-detail1 {
-    background-color: #DFDFDF;
-    padding: 20px 40px;
-    color: #585858;
-    h1 {
-        font-family: 'Lato-Bold';
-        font-size: 30px;
-    }
-    p {
-        font-family: 'Lato-Regular';
-        font-size: 25px;
+@media only screen and (max-width: 1024px) {
+    .banner-sec {
+        .content-sec {
+            h1,
+            h2 {
+                margin-left: 0;
+                text-align: center;
+            }
+            .ban-icons {
+                margin-top: 40px;
+                padding: 0 2px;
+                .icon-sec {
+                    width: 180px;
+                    text-align: center;
+                    img {
+                        width: 90px;
+                        height: 90px;
+                    }
+                    p,
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        img {
+            height: 600px;
+            width: 100%;
+        }
     }
 }
