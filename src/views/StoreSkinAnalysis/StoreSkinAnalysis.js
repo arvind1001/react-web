@@ -59,6 +59,7 @@ const StoreSkinAnalysis = () => {
         </Col>
 
       </Row>
+      <div className="back-point-skin">
       <Container>
         <Row>
           <Col sm={12} md={8}>
@@ -79,7 +80,7 @@ const StoreSkinAnalysis = () => {
           </Col>
         </Row>
       </Container>
-      <div className="link-skin">
+     </div>
         <Container>
           <Row>
             <Col sm={12} md={5}>
@@ -104,7 +105,12 @@ const StoreSkinAnalysis = () => {
                 </Row>
               </div>
             </Col>
-            <Col sm={12} md={12}>
+          </Row>
+        </Container>
+        <div className="link-skin">
+        <Row>
+          
+        <Col sm={12} md={12}>
               <div className="link-cont-text">
                 <h1>Holistic beauty programs</h1>
                 <p>Natural nutrient rich skin and hair products with naturally occurring active ingredients compliments the skin to help achieve beautiful glowing long term skin health and wellbeing</p>
@@ -113,7 +119,6 @@ const StoreSkinAnalysis = () => {
               </div>
             </Col>
           </Row>
-        </Container>
         <img src={skinpanelback} className="back-img" />
       </div>
 
