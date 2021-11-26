@@ -210,7 +210,7 @@ const AdvanceExercises = () => {
                       </div>
                     </Col>
                     <Col sm={2} md={2}>
-                      <img src={personHealth} />
+                      <img src={personHealth} className="person-health-img"/>
                     </Col>
                   </Row>
                 </div>
@@ -227,7 +227,7 @@ const AdvanceExercises = () => {
                 <div className="exe-inner-sp">
                   <Row>
                     <Col sm={2} md={2}>
-                      <img src={personHealth} />
+                      <img src={personHealth} className="person-health-img"/>
                     </Col>
                     <Col sm={6} md={7}>
                       <div className="content-inner">
@@ -324,7 +324,7 @@ const AdvanceExercises = () => {
                       </div>
                     </Col>
                     <Col sm={2} md={2}>
-                      <img src={personHealth} />
+                      <img src={personHealth} className="person-health-img" />
                     </Col>
                   </Row>
                 </div>
@@ -341,7 +341,7 @@ const AdvanceExercises = () => {
                 <div className="exe-inner-sp">
                   <Row>
                     <Col sm={2} md={2}>
-                      <img src={personHealth} />
+                      <img src={personHealth} className="person-health-img"/>
                     </Col>
                     <Col sm={6} md={7}>
                       <div className="content-inner">
@@ -436,7 +436,7 @@ const AdvanceExercises = () => {
                       </div>
                     </Col>
                     <Col sm={2} md={2}>
-                      <img src={personHealth} />
+                      <img src={personHealth} className="person-health-img"/>
                     </Col>
                   </Row>
                 </div>
