@@ -21,7 +21,7 @@ import BookAppointment from '../../assets/images/body-scanning/book-appointment.
 import './StoreInbodyScanning.scss';
 const StoreInbodyScanning = () => {
   return (
-    <>
+    <div className="store-scanning-wrapper">
       <Header />
       <Row>
         <Col sm={12} md={12}>
@@ -256,7 +256,7 @@ const StoreInbodyScanning = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
 

@@ -13,7 +13,7 @@ import bannerIcon4 from '../../assets/images/booking-plan/exe-icon4.png';
 import './BookingPlan.scss';
 const BookingPlan = () => {
     return (
-        <>
+        <div className="booking-plan-wrapper">
             <Header />
             <Row>
                 <Col sm={12} md={12}>
@@ -54,7 +54,7 @@ const BookingPlan = () => {
              <SelectPlans/>
             </Container>
             <FrequentlyAskedQuestions/>
-        </>
+        </div>
     );
 }
 

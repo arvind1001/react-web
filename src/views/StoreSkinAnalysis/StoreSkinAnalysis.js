@@ -19,7 +19,7 @@ import skinPlayerBtn from '../../assets/images/skin-player-btn.png';
 import './StoreSkinAnalysis.scss';
 const StoreSkinAnalysis = () => {
   return (
-    <>
+    <div className="store-skin-wrapper">
       <Header />
       <Row>
         <Col sm={12} md={12}>
@@ -173,7 +173,7 @@ const StoreSkinAnalysis = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
 
