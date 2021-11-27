@@ -26,17 +26,17 @@
             }
             h1 {
                 font-family: 'Montserrat-Bold';
-                font-size: 28px;
+                font-size: 35px;
                 margin-bottom: 40px;
             }
             h2 {
                 font-family: 'Lato-Bold';
-                font-size: 22px;
+                font-size: 30px;
                 margin-bottom: 20px;
             }
             p {
                 font-family: 'Lato-Bold';
-                font-size: 12px;
+                font-size: 15px;
                 padding: 5px 20px 5px 0;
             }
         }
@@ -119,7 +119,6 @@
             }
         }
         .app-btn {
-            margin-top: 10px;
             display: flex;
             flex-wrap: wrap;
             button {
@@ -140,7 +139,7 @@
     }
     .fusion-exe {
         h1 {
-            font-size: 28px;
+            font-size: 30px;
             padding: 20px 0 15px 100px;
             margin: 0;
             font-family: 'Montserrat-Medium';
@@ -306,7 +305,7 @@
         }
         .back-img {
             position: absolute;
-            right: 0;
+            right: 15px;
             top: 0px;
             img {
                 width: 725px;
@@ -315,9 +314,10 @@
         }
     }
     .slider-secs {
+        padding: 0 20px;
         h1 {
             font-family: 'Montserrat-Medium';
-            font-size: 25px;
+            font-size: 30px;
             text-align: center;
             padding: 40px 0 10px;
         }
@@ -338,13 +338,15 @@
             }
         }
         .slick-prev:before {
-            content: "<";
+            font-family: "Font Awesome 5 Free";
+            content: "\f053";
             color: #000;
             font-size: 20px;
             font-weight: bold;
         }
         .slick-next:before {
-            content: ">";
+            font-family: "Font Awesome 5 Free";
+            content: "\f054";
             color: #000;
             font-size: 20px;
             font-weight: bold;
@@ -369,6 +371,7 @@
         }
     }
     .gal-clender {
+        padding: 20px 0;
         h1 {
             font-family: 'Montserrat-Bold';
             font-size: 26px;
@@ -423,7 +426,7 @@
         width: 100%;
     }
     .exercise-air-wrapper .fusion-con-gl .gal-con-img .fu-dis {
-        width: 100%;
+        width: 80%;
     }
     .exercise-air-wrapper .slider-secs .slider-item img {
         width: 135px;
@@ -438,10 +441,30 @@
         }
         .fu-dis-btn {
             padding: 15px;
+            flex-wrap: wrap;
         }
     }
     .exercise-air-wrapper .fusion-con-gl .gal-con h1 {
         text-align: center;
         padding-top: 10px;
+    }
+    .exercise-air-wrapper .fusion-con-gl .gal-con .gal-con-text {
+        background-color: #F2F2F2;
+        padding: 20px;
+        border-radius: 4px;
+        opacity: .8;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .exercise-air-wrapper .fusion-gal .fu-active-gal {
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+    }
+    .exercise-air-wrapper .fusion-con-gl .gal-con-img .fu-dis .fu-dis-con .fu-dis-btn button:nth-child(2) {
+        margin: 0px;
+        background-color: #fff;
+    }
+    .exercise-air-wrapper .fusion-con-gl .gal-con-img .fu-dis .fu-dis-con .fu-dis-btn button {
+        margin: 10px 0;
     }
 }

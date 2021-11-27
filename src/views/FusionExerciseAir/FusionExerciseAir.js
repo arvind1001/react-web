@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from 'react-bootstrap';
-import SchedulerCalendar from 'scheduler-calendar'
-import 'scheduler-calendar/dist/index.css'
+import { Inject, ScheduleComponent, Day, Week, WorkWeek, Month, Agenda } from '@syncfusion/ej2-react-schedule';
 import Header from '../../components/Header/Header';
 import FusionExerciseAirTab from '../../components/FusionExerciseAirTab/FusionExerciseAirTab';
 import FusionMasterSlider from '../../components/FusionMasterSlider/FusionMasterSlider';
@@ -40,7 +39,7 @@ const FusionExerciseAir = () => {
                 </Col>
             </Row>
             <div className="info-wraper">
-                <Row>
+                <Row className="align-items-center">
 
                     <Col sm={12} md={5}>
                         <div className="info-sec">
@@ -98,28 +97,9 @@ const FusionExerciseAir = () => {
                     <Col sm={12} md={9}>
                         <div className="gal-clender">
                             <h1>More Information</h1>
-                            <SchedulerCalendar
-                                availabilities={[
-                                    {
-                                        day: "mon",
-                                        slots: [
-                                            { from: '09:00', to: '10:30' },
-                                            { from: '11:30', to: '13:00' },
-                                            { from: '14:30', to: '17:00' },
-                                        ]
-                                    },
-                                    {
-                                        day: "2021-01-26",
-                                        slots: [
-                                            { from: '09:00', to: '10:30' },
-                                            { from: '11:30', to: '19:00' },
-                                        ]
-                                    },
-                                ]}
-                                availabilityType={'infinity'}
-                                duration={10}
-                                onIntervalChange={() => { }}
-                            />
+                            <ScheduleComponent>
+                                <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
+                            </ScheduleComponent>
                         </div>
                     </Col>
                 </Row>
