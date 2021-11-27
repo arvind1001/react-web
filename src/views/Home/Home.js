@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../components/Header/Header";
+import HomeSlider from "../../components/HomeSlider/HomeSlider";
+
 import "./Home.scss";
 import "../../assets/styles/responsive.scss";
 import Slider from "react-slick";
@@ -46,84 +48,7 @@ const Home = () => {
     <div className="homepage-info">
       <Header />
       <div className="main-slider">
-        <Row>
-          <Col sm={12} md={12}>
-            <Slider {...settings}>
-              <div className="slider-conatiner">
-                <div className=" slider-txt">
-                  <h1 className="italic-txt">Discover your Magnificence</h1>
-                  <h1 className="large-txt">
-                    URBAN SANCTUARIES FOR<br></br>CONSCIOUS CREATURES
-                  </h1>
-                  <p>Human Well-being & Advancement Centre.</p>
-                  <p>
-                    Develop your full Life Force, Holistic Human Vibrancy,
-                    Significance and Purpose.
-                  </p>
-                  <button className="learn-more-btn">
-                    LEARN ABOUT US
-                    <img src={Path} />
-                  </button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <div className="right-icon">
-                  <div className="tb-info">
-                    <span className="health-co">HEALTH</span>
-                    <img className="activeimg" src={Cluster1} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster2} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster3} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster4} />
-                  </div>
-                </div>
-                <img className="banner-img" src={slide1} />
-              </div>
-              <div className="slider-conatiner">
-                <div className=" slider-txt">
-                  <h1 className="italic-txt">Discover your Magnificence</h1>
-                  <h1 className="large-txt">
-                    URBAN SANCTUARIES FOR<br></br>CONSCIOUS CREATURES
-                  </h1>
-                  <p>Human Well-being & Advancement Centre.</p>
-                  <p>
-                    Develop your full Life Force, Holistic Human Vibrancy,
-                    Significance and Purpose.
-                  </p>
-                  <button className="learn-more-btn">
-                    LEARN ABOUT US
-                    <img src={Path} />
-                  </button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <div className="right-icon">
-                  <div className="tb-info">
-                    <span className="health-co">HEALTH</span>
-                    <img className="activeimg" src={Cluster1} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster2} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster3} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster4} />
-                  </div>
-                </div>
-                <img className="banner-img" src={slide1} />
-              </div>
-            </Slider>
-          </Col>
-        </Row>
+      <HomeSlider></HomeSlider>
       </div>
       <div class="user-form">
         <Container>
@@ -228,10 +153,10 @@ const Home = () => {
       </div>
 
       <div class="sec-wrapper">
-        <Row className="align-items-center">
+        <Row className="align-items-center ml-0 mr-0">
           <Col md={4} className="pl-0 pr-0">
-            <div className="img-with-txt">
-              <img src={leafImg} />
+            <div className="img-with-txt h-100">
+              <img src={leafImg} className="h-100 w-100 leaf-img" />
               <div className="img-txt">Life Force Food</div>
               <button class="btn img-btn">Read More </button>
             </div>
@@ -251,7 +176,7 @@ const Home = () => {
               </p>
               <div className="icon-wrapper">
                 <div className="setion-name">
-                  <img src={Cluster1} />
+                  <img src={Cluster1} className="img-fluid" />
                   <p>Health</p>
                 </div>
 
@@ -275,11 +200,11 @@ const Home = () => {
         </Row>
       </div>
 
-      <div class="sec-wrapper img-grid-c">
-        <Row className="align-items-center">
+      <div class="sec-wrapper  img-grid-c">
+        <Row className="align-items-center ml-0 mr-0">
           <Col md={4} className="grid-wrap">
-            <div className="img-with-txt">
-              <img src={card1} />
+            <div className="img-with-txt ">
+              <img src={card1} className="w-100 img-fluid" />
               <div className="img-txt">
                 Advanced Holistic <br />
                 Testing & Apps
@@ -289,7 +214,7 @@ const Home = () => {
           </Col>
           <Col md={4} className="grid-wrap">
             <div className="img-with-txt">
-              <img src={card2} />
+              <img src={card2} className="w-100 img-fluid" />
               <div className="img-txt">Advancement Exercises</div>
 
               <button class="btn img-btn">Read More </button>
@@ -297,7 +222,7 @@ const Home = () => {
           </Col>
           <Col md={4} className="grid-wrap">
             <div className="img-with-txt">
-              <img src={card3} />
+              <img src={card3} className="w-100 img-fluid" />
               <div className="img-txt">
                 <span className="span1">
                   Natural Biospherically <br />
@@ -343,7 +268,7 @@ const Home = () => {
             <img src={mobileBg} />
             <h3>
               OUR <br />
-              APPLICATIONS
+              <div className="spn-txt">APPLICATIONS</div>
             </h3>
           </div>
           <div class="position-relative">
@@ -364,7 +289,7 @@ const Home = () => {
       </div>
       <div className="our-story">
         <Container fluid>
-          <Row>
+          <Row className="align-items-center">
             <Col md={6} className="text-center">
               <img src={globeHands} />
             </Col>
@@ -515,7 +440,9 @@ const Home = () => {
 
               <span className="btn-1">Better Relationships </span>
 
-              <span className="btn-1">Life Balance and Connection</span>
+              <span className="btn-1 bg-light-custom">
+                Life Balance and Connection
+              </span>
 
               <span className="btn-1">Empowerment</span>
 
@@ -544,6 +471,7 @@ const Home = () => {
                   concepts, thank you Sanctuary Store!
                 </p>
               </div>
+              <p className="norm-txt">Discover your Magnificence</p>
             </Col>
           </Row>
         </Container>

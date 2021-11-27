@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Header from "../../components/Header/Header";
-// import "../Home.scss";
+import HomeSlider from "../../components/HomeSlider/HomeSlider";
+
+import "./Home2.scss";
 import "../../assets/styles/responsive.scss";
 import Slider from "react-slick";
 import Cluster1 from "../../assets/images/Cluster-1.png";
@@ -24,17 +26,18 @@ import card2 from "../../assets/images/home-img/card2.png";
 import card3 from "../../assets/images/home-img/card3.png";
 import card4 from "../../assets/images/home-img/card4.png";
 import card5 from "../../assets/images/home-img/card5.png";
-import Twitter from "../../assets/images/home-img/Twitter.png";
 import globeHands from "../../assets/images/home-img/globe-hands.png";
-import Facebook from "../../assets/images/home-img/Facebook.png";
+import BannerHome2 from "../../assets/images/home-img/Banner-home2.png";
 import web from "../../assets/images/home-img/web.png";
 import map from "../../assets/images/home-img/map.png";
+import HCPhone from "../../assets/images/home-img/HCPhone.png";
+
 import Form from "react-bootstrap/Form";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import mobileBg from "../../assets/images/home-img/mobileBg.png";
-import "./Home2.scss";
-const Home2 = () => {
+
+const Home = () => {
   var settings = {
     dots: true,
     infinite: true,
@@ -47,84 +50,7 @@ const Home2 = () => {
     <div className="homepage-info">
       <Header />
       <div className="main-slider">
-        <Row>
-          <Col sm={12} md={12}>
-            <Slider {...settings}>
-              <div className="slider-conatiner">
-                <div className=" slider-txt">
-                  <h1 className="italic-txt">Discover your Magnificence</h1>
-                  <h1 className="large-txt">
-                    URBAN SANCTUARIES FOR<br></br>CONSCIOUS CREATURES
-                  </h1>
-                  <p>Human Well-being & Advancement Centre.</p>
-                  <p>
-                    Develop your full Life Force, Holistic Human Vibrancy,
-                    Significance and Purpose.
-                  </p>
-                  <button className="learn-more-btn">
-                    LEARN ABOUT US
-                    <img src={Path} />
-                  </button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <div className="right-icon">
-                  <div className="tb-info">
-                    <span className="health-co">HEALTH</span>
-                    <img className="activeimg" src={Cluster1} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster2} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster3} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster4} />
-                  </div>
-                </div>
-                <img className="banner-img" src={slide1} />
-              </div>
-              <div className="slider-conatiner">
-                <div className=" slider-txt">
-                  <h1 className="italic-txt">Discover your Magnificence</h1>
-                  <h1 className="large-txt">
-                    URBAN SANCTUARIES FOR<br></br>CONSCIOUS CREATURES
-                  </h1>
-                  <p>Human Well-being & Advancement Centre.</p>
-                  <p>
-                    Develop your full Life Force, Holistic Human Vibrancy,
-                    Significance and Purpose.
-                  </p>
-                  <button className="learn-more-btn">
-                    LEARN ABOUT US
-                    <img src={Path} />
-                  </button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <div className="right-icon">
-                  <div className="tb-info">
-                    <span className="health-co">HEALTH</span>
-                    <img className="activeimg" src={Cluster1} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster2} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster3} />
-                  </div>
-                  <div className="tb-info">
-                    <img src={Cluster4} />
-                  </div>
-                </div>
-                <img className="banner-img" src={slide1} />
-              </div>
-            </Slider>
-          </Col>
-        </Row>
+      <HomeSlider></HomeSlider>
       </div>
       <div class="user-form">
         <Container>
@@ -163,24 +89,19 @@ const Home2 = () => {
               <div className="card-info">
                 <div className="card-wrapper">
                   <img className="card-img" src={Park} />
-                  <p className="cards-title">MASTER SANCTUARY</p>
-                  <p className="cards-txt">Reconnect with Land and Sea </p>
+                  <p className="cards-title">URBAN SANCTUARY</p>
                   <span className="cards-desc">
-                    Master Retreat & Conscious Lifestyle
-                    <br />
-                    Experience
+                    Human Well-being &<br /> Advancement Services{" "}
                   </span>
                 </div>
-                <div className="card-wrapper dark-card">
+                <div className="card-wrapper purple-card">
                   <img className="card-img" src={Group} />
-                  <p className="cards-title">URBAN SANCTUARY</p>
-                  <p className="cards-txt">Holistic Advancement Architecture</p>
+                  <p className="cards-txt">MASTER SANCTUARY</p>
                   <span className="cards-desc">
-                    Human Well-being & Advancement <br />
-                    Services
+                    Master Retreat & <br /> Conscious Lifestyle Experience
                   </span>
                   <div className="d-flex wrap-btn">
-                    <button class="left-btn btn">Virtual experience</button>
+                    <button class="left-btn btn">SHOP ONLINE</button>
                     <button class="right-btn btn">
                       <img src={logoMetaWheel} />
                       <span className="read-more-btn">
@@ -193,9 +114,9 @@ const Home2 = () => {
                 <div className="card-wrapper">
                   <img className="card-img" src={Cart} />
                   <p className="cards-title">SANCTUARY STORE</p>
-                  <p className="cards-txt">Increasing Health Span</p>
+
                   <span className="cards-desc">
-                    Well-being Services and Supplies
+                    Sanctuary Well-being Supplies
                   </span>
                 </div>
               </div>
@@ -229,10 +150,10 @@ const Home2 = () => {
       </div>
 
       <div class="sec-wrapper">
-        <Row className="align-items-center">
+        <Row className="align-items-center ml-0 mr-0">
           <Col md={4} className="pl-0 pr-0">
-            <div className="img-with-txt">
-              <img src={leafImg} />
+            <div className="img-with-txt h-100">
+              <img src={leafImg} className="h-100 w-100 leaf-img" />
               <div className="img-txt">Life Force Food</div>
               <button class="btn img-btn">Read More </button>
             </div>
@@ -252,7 +173,7 @@ const Home2 = () => {
               </p>
               <div className="icon-wrapper">
                 <div className="setion-name">
-                  <img src={Cluster1} />
+                  <img src={Cluster1} className="img-fluid" />
                   <p>Health</p>
                 </div>
 
@@ -276,11 +197,11 @@ const Home2 = () => {
         </Row>
       </div>
 
-      <div class="sec-wrapper img-grid-c">
-        <Row className="align-items-center">
+      <div class="sec-wrapper  img-grid-c">
+        <Row className="align-items-center ml-0 mr-0">
           <Col md={4} className="grid-wrap">
-            <div className="img-with-txt">
-              <img src={card1} />
+            <div className="img-with-txt ">
+              <img src={card1} className="w-100 img-fluid" />
               <div className="img-txt">
                 Advanced Holistic <br />
                 Testing & Apps
@@ -290,7 +211,7 @@ const Home2 = () => {
           </Col>
           <Col md={4} className="grid-wrap">
             <div className="img-with-txt">
-              <img src={card2} />
+              <img src={card2} className="w-100 img-fluid" />
               <div className="img-txt">Advancement Exercises</div>
 
               <button class="btn img-btn">Read More </button>
@@ -298,7 +219,7 @@ const Home2 = () => {
           </Col>
           <Col md={4} className="grid-wrap">
             <div className="img-with-txt">
-              <img src={card3} />
+              <img src={card3} className="w-100 img-fluid" />
               <div className="img-txt">
                 <span className="span1">
                   Natural Biospherically <br />
@@ -338,34 +259,52 @@ const Home2 = () => {
           </Col>
         </Row>
       </div>
-      <div class="img-slides">
+      <div class="img-slides home2-white-slider">
         <Slider {...settings}>
           <div class="position-relative">
-            <img src={mobileBg} />
-            <h3>
-              OUR <br />
-              APPLICATIONS
-            </h3>
+            <img src={HCPhone} />
+            <div className="slides-txt-wrap">
+              <h3 className="position-relative">
+                OUR <br />
+                <div className="spn-txt">APPLICATIONS</div>
+              </h3>
+              <p className="slides-desc">
+                Understand where your food comes from,
+                <br /> and what constitutes Life Force Food
+              </p>
+            </div>
           </div>
           <div class="position-relative">
-            <img src={mobileBg} />
-            <h3>
-              OUR <br />
-              APPLICATIONS
-            </h3>
+            <img src={HCPhone} />
+            <div className="slides-txt-wrap">
+              <h3 className="position-relative">
+                OUR <br />
+                <div className="spn-txt">APPLICATIONS</div>
+              </h3>
+              <p className="slides-desc">
+                Understand where your food comes from,
+                <br /> and what constitutes Life Force Food
+              </p>
+            </div>
           </div>
           <div class="position-relative">
-            <img src={mobileBg} />
-            <h3>
-              OUR <br />
-              APPLICATIONS
-            </h3>
+            <img src={HCPhone} />
+            <div className="slides-txt-wrap">
+              <h3 className="position-relative">
+                OUR <br />
+                <div className="spn-txt">APPLICATIONS</div>
+              </h3>
+              <p className="slides-desc">
+                Understand where your food comes from,
+                <br /> and what constitutes Life Force Food
+              </p>
+            </div>
           </div>
         </Slider>
       </div>
       <div className="our-story">
         <Container fluid>
-          <Row>
+          <Row className="align-items-center">
             <Col md={6} className="text-center">
               <img src={globeHands} />
             </Col>
@@ -412,8 +351,148 @@ const Home2 = () => {
           </Row>
         </Container>
       </div>
+
+      <div className="map-info">
+        <Container>
+          <Row>
+            <Col md={12} className="text-center">
+              <div className="map-title">
+                PROSPER - THE WORLD IS YOUR OYSTER
+              </div>
+              <p className="map-desc">
+                Join the higher consciousness revolution, and utilize the Plato
+                Franchise System
+                <br />
+                to establish a meaningful livelihood.{" "}
+                <a>Find out how to apply here</a>
+              </p>
+            </Col>
+            <Col md={12} className="text-center map-tab">
+              <Tabs defaultActiveKey="first">
+                <Tab eventKey="first" title="World">
+                  <div className="table-data">
+                    <img src={map} />
+                  </div>
+                </Tab>
+                <Tab eventKey="second" title="Australia & New Zealand">
+                  <div className="chart-sec">
+                    <img src={map} />
+                  </div>
+                </Tab>
+                <Tab eventKey="third" title="Auckland">
+                  <div className="chart-sec">
+                    <img src={map} />
+                  </div>
+                </Tab>
+              </Tabs>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="content-wrapper">
+        <Container>
+          <Row>
+            <Col md={6} className="txt-wrapper">
+              <div className="content-heading">THE PLATO FRANCHISE SYSTEM</div>
+              <p>
+                Participate in our Plato Franchise opportunity and prosper while
+                being instrumental in helping create “A Successful Planet”.
+              </p>
+              <p>
+                Plato, born 427 BC, a philosopher in Classical Greece, became
+                the founder of the Academy in Athens, the first institution of
+                higher learning in the Western world. Plato has become widely
+                considered as one of the most respected thinkers of all time.
+                One of Plato’s philosophies was that a person’s wage should not
+                be more than 5 times that of another's. Plato was thinking of
+                the power structures of the era, however to help establish a
+                sense of equality in the world, we believe this thinking is now
+                more important than ever.
+              </p>
+            </Col>
+            <Col md={6}>
+              <button class="btn inquire-btn">ENQUIRE ABOUT THIS</button>
+              <p>
+                Share your skills and passions with others, form your syndicate,
+                build your teams ability, establish each person's role on our
+                operational template, then have your chosen team leader submit
+                your syndicates application to us. If you and your team are
+                approved we will help you open your very own Sanctuary Store or
+                Urban Sanctuary.
+              </p>
+              <p>
+                We believe the Sanctuary and the Plato Franchise System
+                opportunity is the way of the future; creating ecologically and
+                financially sustainable pathways forward while collaborating
+                people. Find out more here.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      <div className="men-grp">
+        <Container className="h-100">
+          <Row className="justify-content-center align-items-center h-100">
+            <Col md={8} className="grp-wrapper">
+              <div className="grp-heading">
+                GREATER PEOPLE FOR BETTER PLANET
+              </div>
+              <p className="grp-desc">
+                Join our growing number of Visionary Urban Sanctuary customers
+              </p>
+
+              <span className="btn-1">Natural Beauty</span>
+
+              <span className="btn-1">Increased Vitality</span>
+
+              <span className="btn-1">Esteem and Appearance</span>
+
+              <span className="btn-1">Improved Health</span>
+
+              <span className="btn-1">Greater Prosperity</span>
+
+              <span className="btn-1">Better Relationships </span>
+
+              <span className="btn-1 bg-light-custom">
+                Life Balance and Connection
+              </span>
+
+              <span className="btn-1">Empowerment</span>
+
+              <span className="btn-1">Greater Purpose</span>
+
+              <span className="btn-1">Clarity of Mind</span>
+
+              <span className="btn-1">Greater Happiness</span>
+            </Col>
+            <Col md={7}>
+              <div className="white-bg-txt ">
+                <div className="d-flex icon-info justify-content-between">
+                  <div className="name">Jean Shrimpton</div>
+                  <div className="icons-cover d-flex align-items-center">
+                    <i className="fab fa-instagram"></i>
+                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-facebook-f"></i>
+                    <img src={web} />
+                  </div>
+                </div>
+                <p>
+                  Since shopping at the Sanctuary Store and eating truly good
+                  food every day, I cannot believe the difference this has made
+                  to my energy levels and work performance. I am definitely
+                  recommending Sanctuary to all of my friends. What a great
+                  concepts, thank you Sanctuary Store!
+                </p>
+              </div>
+              <p className="norm-txt">Discover your Magnificence</p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
 
-export default Home2;
+export default Home;

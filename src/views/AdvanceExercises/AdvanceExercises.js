@@ -28,7 +28,6 @@ const AdvanceExercises = () => {
   return (
     <div className="advance-Exercise page-w">
       <Header />
-   
      <AdvanceBannerSlider/>
       <Row>
         <Col sm={12} md={12}>

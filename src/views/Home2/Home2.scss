@@ -1,0 +1,172 @@
+.homepage-info {
+    .slider-lrg-txt {
+        font-size: 50px;
+    }
+    .slider-txt {
+        .slider-small-txt {
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .slider-txt {
+        .slider-desc-txt {
+            color: rgba(255, 255, 255, 0.7)!important;
+        }
+    }
+    .purple-card {
+        background-color: #7E489C;
+        color: #fff
+    }
+    .home2-white-slider {
+        .slides-txt-wrap {
+            position: absolute;
+            top: 23%;
+            right: 26%;
+            font-family: 'BAHNSCHRIFT';
+            font-size: 30px;
+            h3 {
+                top: auto;
+                right: auto;
+            }
+            .slides-desc {
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+        .slick-dots {
+            top: 37%;
+            width: auto;
+            margin: 0;
+            right: 37%;
+        }
+    }
+    .our-story {
+        margin-top: -8px;
+        z-index: 99;
+        position: relative;
+    }
+    .slider-middle-txt {
+        font-size: 30px;
+    }
+}
+
+.homepage-info {
+    .slick-dots {
+        position: absolute;
+        bottom: 74px;
+        display: grid !important;
+        width: 100%;
+        right: 36px;
+        padding: 10;
+        justify-content: end;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        transition: bottom 300ms;
+        .slick-active {
+            background-image: url(../../assets/images/personHealth.png);
+            background-position: top;
+            background-position: bottom;
+            background-position: left;
+            background-position: right;
+            background-position: center;
+            background-size: 71px 71px;
+        }
+    }
+    .slick-dots li {
+        position: relative;
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        margin: 4px;
+        padding: 0;
+        cursor: pointer;
+    }
+    .slick-dots li.slick-active button:before {
+        font-size: 15px;
+        color: blue;
+    }
+    .slick-dots[data-current-slide="3"] {
+        bottom: -20px;
+    }
+    .hide-text {
+        display: none;
+    }
+    .slick-active {
+        .tb-info {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            margin-bottom: 5px;
+            span {
+                font-family: 'Lato-Bold';
+                font-size: 16px;
+                margin-right: 10px;
+                width: 100px;
+                display: block;
+                text-transform: uppercase;
+                text-align: right;
+                .hide-text {
+                    display: block;
+                }
+            }
+            img {
+                width: 70px;
+            }
+            .dot-text1 {
+                color: #51be58;
+            }
+            .dot-text2 {
+                color: #fc00fe;
+            }
+            .dot-text3 {
+                color: #fec604;
+            }
+            .dot-text4 {
+                color: #0491fe;
+            }
+        }
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .home2-white-slider .slides-txt-wrap {
+        top: 23%;
+        right: 17%;
+    }
+    .home2-white-slider .slick-dots {
+        top: 45%;
+    }
+}
+
+@media(max-width:768px) {
+    .home2-white-slider .slides-txt-wrap {
+        right: 8%;
+    }
+    .home2-white-slider .slick-dots {
+        top: 52%;
+    }
+    .slider-lrg-txt {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:480px) {
+    .home2-white-slider .slick-slide img {
+        min-height: 500px;
+        object-fit: cover;
+    }
+    .home2-white-slider .slides-txt-wrap {
+        text-align: center;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 40px;
+    }
+    .home2-white-slider.img-slides .slick-dots {
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        top: auto;
+    }
+}
