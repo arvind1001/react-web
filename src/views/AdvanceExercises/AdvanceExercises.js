@@ -1,26 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Slider from "react-slick";
 import Header from "../../components/Header/Header";
-import sliderImg from "../../assets/images/advance-exercises/acro-yoga.jpg";
+import AdvanceBannerSlider from "../../components/AdvanceBannerSlider/AdvanceBannerSlider";
+import PlanFormsBottom from "../../components/PlanFormsBottom/PlanFormsBottom";
 import Cluster1 from "../../assets/images/Cluster-1.png";
 import Cluster2 from "../../assets/images/Cluster-2.png";
 import Cluster3 from "../../assets/images/Cluster-3.png";
 import Cluster4 from "../../assets/images/Cluster-4.png";
-import barrow from "../../assets/images/b-arrow.png";
-import shifterApp from "../../assets/images/shifterapp.png";
-import creatorApp from "../../assets/images/creatorapp.png";
 import playerIcon from "../../assets/images/player-icon.png";
 import personHealth from "../../assets/images/personHealth.png";
-import circleIon from "../../assets/images/circle-ion.png";
-import editIcons from "../../assets/images/edit-icons.png";
+
 
 import "./AdvanceExercises.scss";
 
 const AdvanceExercises = () => {
   const [scrollPage, setOffset] = useState(0);
-  const [dotGlobal, changeImg] = useState(1);
-  const textDot = ['HEALTH', 'Prosperity', 'Inspiration', 'Joy'];
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
@@ -31,111 +25,11 @@ const AdvanceExercises = () => {
   // const changeImg=(i)=>{
   //  dotGlobals(i);
   // }
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    dotsClass: "slick-dots slick-thumb",
-    slidesToScroll: 1,
-    maxWidth: 50,
-    customPaging: function (i) {
-      return (
-        <a>
-          <div className="tb-info" >
-            <span className={`hide-text dot-text${i + 1}`}>{textDot[i]}</span>
-            <img src={`${'Cluster-'}${i + 1}.png`} onClick={() => changeImg(i + 1)} />
-          </div>
-        </a>
-      );
-    },
-  };
   return (
     <div className="advance-Exercise page-w">
       <Header />
    
-      <div className="advance-Exercise-slider">
-        <Row>
-          <Col sm={12} md={12}>
-            <Slider {...settings}>
-              <div className="slider-conatiner">
-                <div className="cente-text">
-                  <h1>Advancement exercises</h1>
-                  <p>Can be done anywhere- no specialised equipment required</p>
-                  <button>Start Todat</button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <img src={sliderImg} className="slider-img"/>
-              </div>
-              <div className="slider-conatiner">
-                <div className="cente-text">
-                  <h1>Advancement exercises</h1>
-                  <p>Can be done anywhere- no specialised equipment required</p>
-                  <button>Start Todat</button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <img src={sliderImg} className="slider-img" />
-              </div>
-              <div className="slider-conatiner">
-                <div className="cente-text">
-                  <h1>Advancement exercises</h1>
-                  <p>Can be done anywhere- no specialised equipment required</p>
-                  <button>Start Todat</button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <img src={sliderImg} className="slider-img" />
-              </div>
-              <div className="slider-conatiner">
-                <div className="cente-text">
-                  <h1>Advancement exercises</h1>
-                  <p>Can be done anywhere- no specialised equipment required</p>
-                  <button>Start Todat</button>
-                  <div className="arrow-icon">
-                    <img src={barrow} />
-                  </div>
-                </div>
-                <img src={sliderImg} className="slider-img" />
-              </div>
-            </Slider>
-          </Col>
-        </Row>
-    
-      </div>
-      <div className="info-wraper">
-        <Row>
-          <Col sm={12} md={5}>
-            <div className="info-sec">
-              <span className="info-left">
-                <img src={circleIon} />
-                <p>Health</p>
-              </span>
-              <p>When phasellus dignissim, in pellentesuqe?</p>
-              <img src={editIcons} />
-            </div>
-          </Col>
-          <Col sm={12} md={2}>
-            <div className="tb-info">
-            <img className="activeimg" src={`${'Cluster-'}${dotGlobal}.png`} />
-            </div>
-          </Col>
-          <Col sm={12} md={5}>
-            <div className="app-btn">
-              <button>
-                <img src={shifterApp} /> WEIGHT SHIFTER APP
-              </button>
-              <button>
-                <img src={creatorApp} /> HEALTH CREATOR APP
-              </button>
-            </div>
-          </Col>
-        </Row>
-      </div>
+     <AdvanceBannerSlider/>
       <Row>
         <Col sm={12} md={12}>
           <div className="botom-icon">
@@ -453,52 +347,7 @@ const AdvanceExercises = () => {
         }`}
       >
         <h3>WEIGHT SHIFTER PLAN</h3>
-        <Row>
-          <Col sm={12} md={6} className="mx-auto">
-            <div className="ex-plans">
-              <p>Create a new Meal Plan</p>
-              <div class="form-group">
-                <label>Exercise Plan Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Plan Name"
-                />
-              </div>
-              <div class="form-group">
-                <label>Select Week</label>
-                <select class="form-control">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-                <div className="submit-btn">
-                  <button className="btn">Create Plan</button>
-                </div>
-              </div>
-            </div>
-          </Col>
-          {/* <Col sm={12} md={6}>
-            <div className="ex-plans">
-              <p>or Select an existing Exercise plan</p>
-              <div class="form-group">
-                <label>Exercise plan Name</label>
-                <select class="form-control" >
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-                <div className='submit-btn'>
-                  <button className="btn">Submit</button>
-                </div>
-              </div>
-            </div>
-          </Col> */}
-        </Row>
+        <PlanFormsBottom/>
       </div>
     </div>
   );

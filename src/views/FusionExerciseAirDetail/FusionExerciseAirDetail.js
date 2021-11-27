@@ -100,6 +100,29 @@ const FusionExerciseAirDetail = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+          }
+      },
+      {
+          breakpoint: 600,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+    ]
   };
   var sigCard = {
     autoplay: true,
@@ -110,9 +133,32 @@ const FusionExerciseAirDetail = () => {
     slidesToShow: 7,
     slidesToScroll: 1,
     arrows: true,
+    responsive: [
+      {
+          breakpoint: 1025,
+          settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5,
+          }
+      },
+      {
+          breakpoint: 769,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+          }
+      },
+      {
+          breakpoint: 480,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+          }
+      }
+    ]
   };
   return (
-    <>
+    <div className="fusion-exe-detail-warper">
       <Header />
       <Row>
         <Col sm={12} md={12}>
@@ -302,6 +348,10 @@ const FusionExerciseAirDetail = () => {
                       <p>Lake</p>
                       <img src={sigment7} />
                     </div>
+                    <div className="sig-card">
+                      <p>High Tech Studio</p>
+                      <img src={sigment5} />
+                    </div>
                   </Slider>
                 </Tab>
                 <Tab eventKey="second" title="Select Segments">
@@ -333,6 +383,10 @@ const FusionExerciseAirDetail = () => {
                     <div className="sig-card">
                       <p>Lake</p>
                       <img src={sigment7} />
+                    </div>
+                    <div className="sig-card">
+                      <p>High Tech Studio</p>
+                      <img src={sigment5} />
                     </div>
                   </Slider>
                 </Tab>
@@ -541,7 +595,7 @@ const FusionExerciseAirDetail = () => {
             <div className="char-setion">
               <Tabs defaultActiveKey="first">
                 <Tab eventKey="first" title="View 1">
-                  <div className="table-data">
+                  <div className="table-data table-responsive">
                     <table class="table table-bordered">
                       <thead>
                         <tr>
@@ -624,7 +678,7 @@ const FusionExerciseAirDetail = () => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 }
 
