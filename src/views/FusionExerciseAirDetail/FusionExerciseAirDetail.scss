@@ -227,8 +227,9 @@
                     }
                     .health {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         flex-wrap: wrap;
+                        width: 65%;
                         p {
                             margin-bottom: 5px;
                             font-family: 'Lato-Light';
@@ -267,6 +268,7 @@
                     }
                     .hactive {
                         border: 1px solid #9ad962;
+                        color: #9ad962;
                     }
                 }
                 .max-health {
@@ -316,6 +318,7 @@
                 display: inline-flex;
                 padding: 0;
                 border-radius: 4px;
+                margin-bottom: 15px;
             }
             .nav-link {
                 display: block;
@@ -643,5 +646,8 @@
         }
         .fusion-exe-detail-warper .review-card {
             margin: 0;
+        }
+        .fusion-exe-detail-warper .vedio-sec .profile-info .profile-wrap .health {
+            margin: 0 auto;
         }
     }
